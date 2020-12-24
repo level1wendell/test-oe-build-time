@@ -1,0 +1,1632 @@
+
+### Shell environment set up for builds. ###
+
+You can now run 'bitbake <target>'
+
+Common targets are:
+    core-image-minimal
+    core-image-sato
+    meta-toolchain
+    meta-ide-support
+
+You can also run generated qemu images with a command like 'runqemu qemux86'
+
+Other commonly useful commands are:
+ - 'devtool' and 'recipetool' handle common recipe tasks
+ - 'bitbake-layers' handles common layer tasks
+ - 'oe-pkgdata-util' handles common target package tasks
+WARNING: Host distribution "debian-3" has not been validated with this version of the build system; you may possibly experience unexpected failures. It is recommended that you use a tested distribution.
+Parsing recipes...done.
+Parsing of 1698 .bb files complete (0 cached, 1698 parsed). 2448 targets, 68 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.44.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "debian-3"
+TARGET_SYS           = "x86_64-poky-linux"
+MACHINE              = "qemux86-64"
+DISTRO               = "poky"
+DISTRO_VERSION       = "3.0.2"
+TUNE_FEATURES        = "m64 core2"
+TARGET_FPU           = ""
+meta                 
+meta-poky            
+meta-yocto-bsp       = "zeus:73fe0e273b4e00dcb08122c4f54fc65316e2a793"
+meta-browser         = "zeus:1697014a05967ed54b294f3c4b5621df494d6551"
+meta-rust            = "zeus:5d1ada0c97723e1526bf5599b2fa2cbb56c2c0dc"
+meta-oe              = "zeus:e855ecc6d35677e79780adc57b2552213c995731"
+meta-clang           = "zeus:0c393398a91713a108f319ac75337c02b7ebeaa7"
+meta-qt5             = "zeus:a582fd4c810529e9af0c81700407b1955d1391d2"
+
+NOTE: Fetching uninative binary shim from http://downloads.yoctoproject.org/releases/uninative/2.7/x86_64-nativesdk-libc.tar.xz;sha256sum=9498d8bba047499999a7310ac2576d0796461184965351a56f6d32c888a1f216
+Initialising tasks...done.
+Sstate summary: Wanted 0 Found 0 Missed 0 Current 0 (0% match, 0% complete)
+NOTE: No setscene tasks
+NOTE: Executing Tasks
+NOTE: Running task 1 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libevdev/libevdev_1.8.0.bb:do_fetch)
+NOTE: Running task 2 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/wayland/mtdev_1.1.5.bb:do_fetch)
+NOTE: Running task 3 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libfontenc_1.1.4.bb:do_fetch)
+NOTE: Running task 4 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-connectivity/nfs-utils/nfs-utils_2.4.1.bb:do_fetch)
+NOTE: Running task 5 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-font/font-util_1.3.2.bb:do_fetch)
+NOTE: Running task 6 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/wayland/libinput_1.14.1.bb:do_fetch)
+NOTE: Running task 7 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-connectivity/libpcap/libpcap_1.9.1.bb:do_fetch)
+NOTE: Running task 8 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libfontenc_1.1.4.bb:do_fetch)
+NOTE: Running task 9 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-app/mkfontscale_1.1.3.bb:do_fetch)
+NOTE: Running task 10 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-app/mkfontdir_1.0.7.bb:do_fetch)
+NOTE: Running task 11 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/vulkan/vulkan-headers_1.1.108.bb:do_fetch)
+NOTE: Running task 12 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libcap/libcap_2.27.bb:do_fetch)
+NOTE: Running task 13 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libice_1.0.10.bb:do_fetch)
+NOTE: Running task 14 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libpthread-stubs_0.4.bb:do_fetch)
+NOTE: Running task 15 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-proto/xcb-proto_1.13.bb:do_fetch)
+NOTE: Running task 16 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxau_1.0.9.bb:do_fetch)
+NOTE: Running task 17 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxdmcp_1.1.3.bb:do_fetch)
+NOTE: Running task 18 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxtst_1.2.3.bb:do_fetch)
+NOTE: Running task 19 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-app/mkfontdir_1.0.7.bb:do_fetch)
+NOTE: Running task 20 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-font/encodings_1.0.5.bb:do_fetch)
+NOTE: Running task 21 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-app/mkfontscale_1.1.3.bb:do_fetch)
+NOTE: Running task 22 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/m4/m4_1.4.18.bb:do_fetch)
+NOTE: Running task 23 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-connectivity/connman/connman-conf.bb:do_fetch)
+NOTE: Running task 24 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-app/xinit_1.4.1.bb:do_fetch)
+NOTE: Running task 25 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xinput-calibrator/pointercal-xinput_0.0.bb:do_fetch)
+NOTE: Running task 26 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-app/xinput_1.6.3.bb:do_fetch)
+NOTE: Running task 27 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-app/rgb_1.0.6.bb:do_fetch)
+NOTE: Running task 28 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-xserver/xserver-xf86-config_0.1.bb:do_fetch)
+NOTE: Running task 29 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-app/xkbcomp_1.4.2.bb:do_fetch)
+NOTE: Running task 30 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-driver/xf86-input-libinput_0.29.0.bb:do_fetch)
+NOTE: Running task 31 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/distcc/distcc_3.3.3.bb:do_fetch)
+NOTE: Running task 32 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/cwautomacros/cwautomacros_20110201.bb:do_fetch)
+NOTE: Running task 33 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/libmnl/libmnl_1.0.4.bb:do_fetch)
+NOTE: Running task 34 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/mpg123/mpg123_1.25.11.bb:do_fetch)
+NOTE: Running task 35 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/lame/lame_3.100.bb:do_fetch)
+NOTE: Running task 36 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/speex/speex_1.2.0.bb:do_fetch)
+NOTE: Running task 37 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/taglib/taglib_1.11.1.bb:do_fetch)
+NOTE: Running task 38 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-connectivity/ppp/ppp_2.4.7.bb:do_fetch)
+NOTE: Running task 39 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/iptables/iptables_1.8.3.bb:do_fetch)
+NOTE: Running task 40 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxinerama_1.1.4.bb:do_fetch)
+NOTE: Running task 41 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libdmx_1.1.4.bb:do_fetch)
+NOTE: Running task 42 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxmu_1.1.3.bb:do_fetch)
+NOTE: Running task 43 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxkbfile_1.1.0.bb:do_fetch)
+NOTE: Running task 44 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxfont2_2.0.3.bb:do_fetch)
+NOTE: Running task 45 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-font/font-util_1.3.2.bb:do_fetch)
+NOTE: Running task 46 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/flex/flex_2.6.0.bb:do_fetch)
+NOTE: Running task 47 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/bison/bison_3.4.1.bb:do_fetch)
+NOTE: Running task 48 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/python/python3-pycairo_1.18.1.bb:do_fetch)
+NOTE: Running task 49 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libfm/libfm-extra_1.3.1.bb:do_fetch)
+NOTE: Running task 50 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/menu-cache/menu-cache_1.1.0.bb:do_fetch)
+NOTE: Running task 51 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libexif/libexif_0.6.21.bb:do_fetch)
+NOTE: Running task 52 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libpcre/libpcre2_10.33.bb:do_fetch)
+NOTE: Running task 53 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libcroco/libcroco_0.6.13.bb:do_fetch)
+NOTE: Running task 54 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/tcp-wrappers/tcp-wrappers_7.6.bb:do_fetch)
+NOTE: Running task 55 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libyaml/libyaml_0.2.2.bb:do_fetch)
+NOTE: Running task 56 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxv_1.0.11.bb:do_fetch)
+NOTE: Running task 57 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/vulkan/vulkan-loader_1.1.108.bb:do_fetch)
+NOTE: Running task 58 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-gnome/libgudev/libgudev_233.bb:do_fetch)
+NOTE: Running task 59 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libusb/libusb1_1.0.22.bb:do_fetch)
+NOTE: Running task 60 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/orc/orc_0.4.29.bb:do_fetch)
+NOTE: Running task 61 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/orc/orc_0.4.29.bb:do_fetch)
+NOTE: Running task 62 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libgcrypt/libgcrypt_1.8.4.bb:do_fetch)
+NOTE: Running task 63 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libunistring/libunistring_0.9.10.bb:do_fetch)
+NOTE: Running task 64 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/nettle/nettle_3.5.1.bb:do_fetch)
+NOTE: recipe connman-conf-1.0-r2: task do_fetch: Started
+NOTE: recipe connman-conf-1.0-r2: task do_fetch: Succeeded
+NOTE: Running task 65 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libsm_1.2.3.bb:do_fetch)
+NOTE: recipe xserver-xf86-config-0.1-r33: task do_fetch: Started
+NOTE: recipe xserver-xf86-config-0.1-r33: task do_fetch: Succeeded
+NOTE: recipe libevdev-1.8.0-r0: task do_fetch: Started
+NOTE: Running task 66 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/freetype/freetype_2.10.1.bb:do_fetch)
+NOTE: recipe mtdev-1.1.5-r0: task do_fetch: Started
+NOTE: recipe libfontenc-native-1_1.1.4-r0: task do_fetch: Started
+NOTE: recipe nfs-utils-2.4.1-r0: task do_fetch: Started
+NOTE: recipe font-util-native-1.3.2-r0: task do_fetch: Started
+NOTE: recipe libinput-1.14.1-r0: task do_fetch: Started
+NOTE: recipe libpcap-1.9.1-r0: task do_fetch: Started
+NOTE: recipe libfontenc-1_1.1.4-r0: task do_fetch: Started
+NOTE: recipe mkfontscale-native-1.1.3-r0: task do_fetch: Started
+NOTE: recipe mkfontdir-native-1_1.0.7-r8.0: task do_fetch: Started
+NOTE: recipe vulkan-headers-1.1.108-r0: task do_fetch: Started
+NOTE: recipe libcap-native-2.27-r0: task do_fetch: Started
+NOTE: recipe libice-native-1_1.0.10-r0: task do_fetch: Started
+NOTE: recipe libpthread-stubs-native-0.4-r0: task do_fetch: Started
+NOTE: recipe xcb-proto-native-1.13-r0: task do_fetch: Started
+NOTE: recipe libxau-native-1_1.0.9-r0: task do_fetch: Started
+NOTE: recipe mkfontdir-1_1.0.7-r8.0: task do_fetch: Started
+NOTE: recipe encodings-1_1.0.5-r2.1: task do_fetch: Started
+NOTE: recipe mkfontscale-1.1.3-r0: task do_fetch: Started
+NOTE: recipe m4-1.4.18-r0: task do_fetch: Started
+NOTE: recipe xinit-1_1.4.1-r0: task do_fetch: Started
+NOTE: recipe xinput-1.6.3-r0: task do_fetch: Started
+NOTE: recipe rgb-1_1.0.6-r0: task do_fetch: Started
+NOTE: recipe xkbcomp-1.4.2-r0: task do_fetch: Started
+NOTE: recipe xf86-input-libinput-2_0.29.0-r0: task do_fetch: Started
+NOTE: recipe mpg123-1.25.11-r0: task do_fetch: Started
+NOTE: recipe libxtst-native-1_1.2.3-r0: task do_fetch: Started
+NOTE: recipe pointercal-xinput-0.0-r7: task do_fetch: Started
+NOTE: recipe pointercal-xinput-0.0-r7: task do_fetch: Succeeded
+NOTE: recipe lame-3.100-r0: task do_fetch: Started
+NOTE: recipe cwautomacros-native-20110201-r0: task do_fetch: Started
+NOTE: recipe taglib-1.11.1-r0: task do_fetch: Started
+NOTE: recipe speex-1.2.0-r0: task do_fetch: Started
+NOTE: recipe libxdmcp-native-1_1.1.3-r0: task do_fetch: Started
+NOTE: recipe libmnl-1.0.4-r0: task do_fetch: Started
+NOTE: Running task 67 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/harfbuzz/harfbuzz_2.6.1.bb:do_fetch)
+NOTE: recipe ppp-2.4.7-r0: task do_fetch: Started
+NOTE: recipe iptables-1.8.3-r0: task do_fetch: Started
+NOTE: recipe distcc-3.3.3-r0: task do_fetch: Started
+NOTE: recipe libxinerama-1_1.1.4-r0: task do_fetch: Started
+NOTE: recipe libdmx-1_1.1.4-r0: task do_fetch: Started
+NOTE: recipe libxmu-1_1.1.3-r0: task do_fetch: Started
+NOTE: recipe libxkbfile-1_1.1.0-r0: task do_fetch: Started
+NOTE: recipe font-util-1.3.2-r0: task do_fetch: Started
+NOTE: recipe tcp-wrappers-7.6-r10: task do_fetch: Started
+NOTE: recipe libxfont2-2.0.3-r0: task do_fetch: Started
+NOTE: recipe python3-pycairo-1.18.1-r0: task do_fetch: Started
+NOTE: recipe menu-cache-1.1.0-r0: task do_fetch: Started
+NOTE: recipe flex-2.6.0-r0: task do_fetch: Started
+NOTE: recipe bison-3.4.1-r0: task do_fetch: Started
+NOTE: recipe libfm-extra-1.3.1-r0: task do_fetch: Started
+NOTE: recipe vulkan-loader-1.1.108-r0: task do_fetch: Started
+NOTE: recipe libexif-0.6.21-r0: task do_fetch: Started
+NOTE: recipe libpcre2-10.33-r0: task do_fetch: Started
+NOTE: recipe libyaml-0.2.2-r0: task do_fetch: Started
+NOTE: recipe libxv-1.0.11-r0: task do_fetch: Started
+NOTE: recipe libgudev-233-r0: task do_fetch: Started
+NOTE: recipe libusb1-1.0.22-r0: task do_fetch: Started
+NOTE: recipe orc-0.4.29-r0: task do_fetch: Started
+NOTE: recipe libunistring-0.9.10-r0: task do_fetch: Started
+NOTE: recipe libcroco-native-0.6.13-r0: task do_fetch: Started
+NOTE: recipe nettle-3.5.1-r0: task do_fetch: Started
+NOTE: recipe orc-native-0.4.29-r0: task do_fetch: Started
+NOTE: recipe libgcrypt-native-1.8.4-r0: task do_fetch: Started
+NOTE: recipe libsm-native-1_1.2.3-r0: task do_fetch: Started
+NOTE: recipe freetype-native-2.10.1-r0: task do_fetch: Started
+NOTE: recipe harfbuzz-native-2.6.1-r0: task do_fetch: Started
+NOTE: recipe mtdev-1.1.5-r0: task do_fetch: Succeeded
+NOTE: Running task 68 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/fribidi/fribidi_1.0.5.bb:do_fetch)
+NOTE: recipe fribidi-native-1.0.5-r0: task do_fetch: Started
+NOTE: recipe libcap-native-2.27-r0: task do_fetch: Succeeded
+NOTE: Running task 69 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxft_2.3.3.bb:do_fetch)
+NOTE: recipe libxft-native-1_2.3.3-r0: task do_fetch: Started
+NOTE: recipe cwautomacros-native-20110201-r0: task do_fetch: Succeeded
+NOTE: Running task 70 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/xtrans_1.4.0.bb:do_fetch)
+NOTE: recipe xtrans-native-1_1.4.0-r0: task do_fetch: Started
+NOTE: recipe nfs-utils-2.4.1-r0: task do_fetch: Succeeded
+NOTE: Running task 71 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxcb_1.13.1.bb:do_fetch)
+NOTE: recipe python3-pycairo-1.18.1-r0: task do_fetch: Succeeded
+NOTE: Running task 72 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/atk/at-spi2-core_2.32.1.bb:do_fetch)
+NOTE: recipe libyaml-0.2.2-r0: task do_fetch: Succeeded
+NOTE: recipe libxcb-native-1.13.1-r0: task do_fetch: Started
+NOTE: Running task 73 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libcap-ng/libcap-ng_0.7.9.bb:do_fetch)
+NOTE: recipe xf86-input-libinput-2_0.29.0-r0: task do_fetch: Succeeded
+NOTE: Running task 74 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxau_1.0.9.bb:do_fetch)
+NOTE: recipe at-spi2-core-native-2.32.1-r0: task do_fetch: Started
+NOTE: recipe iptables-1.8.3-r0: task do_fetch: Succeeded
+NOTE: Running task 75 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-proto/xcb-proto_1.13.bb:do_fetch)
+NOTE: recipe xkbcomp-1.4.2-r0: task do_fetch: Succeeded
+NOTE: Running task 76 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libgpg-error/libgpg-error_1.36.bb:do_fetch)
+NOTE: recipe libcap-ng-0.7.9-r0: task do_fetch: Started
+NOTE: recipe ppp-2.4.7-r0: task do_fetch: Succeeded
+NOTE: Running task 77 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libassuan/libassuan_2.5.3.bb:do_fetch)
+NOTE: recipe libxau-1_1.0.9-r0: task do_fetch: Started
+NOTE: recipe libxtst-native-1_1.2.3-r0: task do_fetch: Succeeded
+NOTE: Running task 78 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/diffutils/diffutils_3.7.bb:do_fetch)
+NOTE: recipe xcb-proto-1.13-r0: task do_fetch: Started
+NOTE: recipe libgpg-error-native-1.36-r0: task do_fetch: Started
+NOTE: recipe libassuan-native-2.5.3-r0: task do_fetch: Started
+NOTE: recipe tcp-wrappers-7.6-r10: task do_fetch: Succeeded
+NOTE: recipe diffutils-3.7-r0: task do_fetch: Started
+NOTE: Running task 79 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/aspell/aspell_0.60.7.bb:do_fetch)
+NOTE: recipe libcroco-native-0.6.13-r0: task do_fetch: Succeeded
+NOTE: Running task 80 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/docbook-xml/docbook-xsl-stylesheets_1.79.1.bb:do_fetch)
+NOTE: recipe aspell-0.60.7-r1: task do_fetch: Started
+NOTE: recipe docbook-xsl-stylesheets-native-1.79.1-r0: task do_fetch: Started
+NOTE: recipe font-util-native-1.3.2-r0: task do_fetch: Succeeded
+NOTE: recipe libgudev-233-r0: task do_fetch: Succeeded
+NOTE: recipe font-util-1.3.2-r0: task do_fetch: Succeeded
+NOTE: Running task 81 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/docbook-xml/docbook-xml-dtd4_4.5.bb:do_fetch)
+NOTE: Running task 82 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/grep/grep_3.3.bb:do_fetch)
+NOTE: Running task 83 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/which/which_2.21.bb:do_fetch)
+NOTE: recipe libmnl-1.0.4-r0: task do_fetch: Succeeded
+NOTE: Running task 84 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/mdadm/mdadm_4.1.bb:do_fetch)
+NOTE: recipe grep-3.3-r0: task do_fetch: Started
+NOTE: recipe which-2.21-r3: task do_fetch: Started
+NOTE: recipe rgb-1_1.0.6-r0: task do_fetch: Succeeded
+NOTE: recipe docbook-xml-dtd4-native-4.5-r0: task do_fetch: Started
+NOTE: Running task 85 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/btrfs-tools/btrfs-tools_5.2.2.bb:do_fetch)
+NOTE: recipe mdadm-4.1-r0: task do_fetch: Started
+NOTE: recipe btrfs-tools-5.2.2-r0: task do_fetch: Started
+NOTE: recipe xinput-1.6.3-r0: task do_fetch: Succeeded
+NOTE: Running task 86 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/e2fsprogs/e2fsprogs_1.45.3.bb:do_fetch)
+NOTE: recipe at-spi2-core-native-2.32.1-r0: task do_fetch: Succeeded
+NOTE: Running task 87 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-connectivity/socat/socat_1.7.3.3.bb:do_fetch)
+NOTE: recipe socat-1.7.3.3-r0: task do_fetch: Started
+NOTE: recipe mkfontscale-native-1.1.3-r0: task do_fetch: Succeeded
+NOTE: recipe mkfontscale-1.1.3-r0: task do_fetch: Succeeded
+NOTE: Running task 88 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/bc/bc_1.07.1.bb:do_fetch)
+NOTE: Running task 89 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/procps/procps_3.3.15.bb:do_fetch)
+NOTE: recipe e2fsprogs-1.45.3-r0: task do_fetch: Started
+NOTE: recipe bc-1.07.1-r0: task do_fetch: Started
+NOTE: recipe procps-3.3.15-r0: task do_fetch: Started
+NOTE: recipe docbook-xml-dtd4-native-4.5-r0: task do_fetch: Succeeded
+NOTE: Running task 90 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-connectivity/iproute2/iproute2_5.2.0.bb:do_fetch)
+NOTE: recipe libgpg-error-native-1.36-r0: task do_fetch: Succeeded
+NOTE: Running task 91 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/shadow/shadow-securetty_4.6.bb:do_fetch)
+NOTE: recipe libxfont2-2.0.3-r0: task do_fetch: Succeeded
+NOTE: Running task 92 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/matchbox-session/matchbox-session_0.1.bb:do_fetch)
+NOTE: recipe iproute2-5.2.0-r0: task do_fetch: Started
+NOTE: recipe xcb-proto-native-1.13-r0: task do_fetch: Succeeded
+NOTE: recipe xcb-proto-1.13-r0: task do_fetch: Succeeded
+NOTE: Running task 93 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-sato/matchbox-theme-sato/matchbox-theme-sato_0.2.bb:do_fetch)
+NOTE: Running task 94 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/gstreamer/gstreamer1.0-plugins-good_1.16.1.bb:do_fetch)
+NOTE: recipe shadow-securetty-4.6-r3: task do_fetch: Started
+NOTE: recipe shadow-securetty-4.6-r3: task do_fetch: Succeeded
+NOTE: Running task 95 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-connectivity/connman/connman_1.37.bb:do_fetch)
+NOTE: recipe matchbox-session-0.1-r4: task do_fetch: Started
+NOTE: recipe matchbox-session-0.1-r4: task do_fetch: Succeeded
+NOTE: Running task 96 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/dbus-wait/dbus-wait_git.bb:do_fetch)
+NOTE: recipe libassuan-native-2.5.3-r0: task do_fetch: Succeeded
+NOTE: Running task 97 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-bsp/formfactor/formfactor_0.0.bb:do_fetch)
+NOTE: recipe taglib-1.11.1-r0: task do_fetch: Succeeded
+NOTE: recipe matchbox-theme-sato-0.2-r0: task do_fetch: Started
+NOTE: Running task 98 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/x11-common/xserver-nodm-init_3.0.bb:do_fetch)
+NOTE: recipe gstreamer1.0-plugins-good-1.16.1-r0: task do_fetch: Started
+NOTE: recipe connman-1.37-r0: task do_fetch: Started
+NOTE: recipe dbus-wait-0.1+gitAUTOINC+6cc6077a36-r2: task do_fetch: Started
+NOTE: recipe formfactor-0.0-r45: task do_fetch: Started
+NOTE: recipe formfactor-0.0-r45: task do_fetch: Succeeded
+NOTE: Running task 99 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xinput-calibrator/xinput-calibrator_git.bb:do_fetch)
+NOTE: recipe xserver-nodm-init-3.0-r31: task do_fetch: Started
+NOTE: recipe xserver-nodm-init-3.0-r31: task do_fetch: Succeeded
+NOTE: Running task 100 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-app/xauth_1.1.bb:do_fetch)
+NOTE: recipe xinput-calibrator-0.7.5+gitAUTOINC+03dadf5510-r6: task do_fetch: Started
+NOTE: recipe xauth-1_1.1-r0: task do_fetch: Started
+NOTE: recipe libdmx-1_1.1.4-r0: task do_fetch: Succeeded
+NOTE: Running task 101 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-app/xmodmap_1.0.10.bb:do_fetch)
+NOTE: recipe mdadm-4.1-r0: task do_fetch: Succeeded
+NOTE: Running task 102 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-app/xset_1.2.4.bb:do_fetch)
+NOTE: recipe xmodmap-1_1.0.10-r0: task do_fetch: Started
+NOTE: recipe xset-1_1.2.4-r0: task do_fetch: Started
+NOTE: recipe mkfontdir-1_1.0.7-r8.0: task do_fetch: Succeeded
+NOTE: recipe mkfontdir-native-1_1.0.7-r8.0: task do_fetch: Succeeded
+NOTE: Running task 103 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-app/xdpyinfo_1.3.2.bb:do_fetch)
+NOTE: Running task 104 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-app/xhost_1.0.8.bb:do_fetch)
+NOTE: recipe libxau-native-1_1.0.9-r0: task do_fetch: Succeeded
+NOTE: recipe libxau-1_1.0.9-r0: task do_fetch: Succeeded
+NOTE: Running task 105 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-driver/xf86-video-cirrus_1.5.3.bb:do_fetch)
+NOTE: Running task 106 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-driver/xf86-video-vmware_13.3.0.bb:do_fetch)
+NOTE: recipe iproute2-5.2.0-r0: task do_fetch: Succeeded
+NOTE: Running task 107 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-driver/xf86-video-vesa_2.4.0.bb:do_fetch)
+NOTE: recipe xhost-1_1.0.8-r0: task do_fetch: Started
+NOTE: recipe dbus-wait-0.1+gitAUTOINC+6cc6077a36-r2: task do_fetch: Succeeded
+NOTE: recipe xdpyinfo-1_1.3.2-r0: task do_fetch: Started
+NOTE: Running task 108 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-xserver/xserver-xorg_1.20.5.bb:do_fetch)
+NOTE: recipe xf86-video-cirrus-2_1.5.3-r0: task do_fetch: Started
+NOTE: recipe xf86-video-vmware-2_13.3.0-r0: task do_fetch: Started
+NOTE: recipe xf86-video-vesa-2_2.4.0-r0: task do_fetch: Started
+NOTE: recipe matchbox-theme-sato-0.2-r0: task do_fetch: Succeeded
+NOTE: Running task 109 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-driver/xf86-video-fbdev_0.5.0.bb:do_fetch)
+NOTE: recipe xserver-xorg-2_1.20.5-r0: task do_fetch: Started
+NOTE: recipe mpg123-1.25.11-r0: task do_fetch: Succeeded
+NOTE: Running task 110 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/sudo/sudo_1.8.27.bb:do_fetch)
+NOTE: recipe xf86-video-fbdev-2_0.5.0-r0: task do_fetch: Started
+NOTE: recipe sudo-1.8.27-r0: task do_fetch: Started
+NOTE: recipe which-2.21-r3: task do_fetch: Succeeded
+NOTE: Running task 111 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/pinentry/pinentry_1.1.0.bb:do_fetch)
+NOTE: recipe pinentry-1.1.0-r0: task do_fetch: Started
+NOTE: recipe libpthread-stubs-native-0.4-r0: task do_fetch: Succeeded
+NOTE: Running task 112 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/devel-config/distcc-config.bb:do_fetch)
+NOTE: recipe connman-1.37-r0: task do_fetch: Succeeded
+NOTE: Running task 113 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/binutils/binutils_2.32.bb:do_fetch)
+NOTE: recipe distcc-config-1.0-r0: task do_fetch: Started
+NOTE: recipe distcc-config-1.0-r0: task do_fetch: Succeeded
+NOTE: Running task 114 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/devel-config/nfs-export-root.bb:do_fetch)
+NOTE: recipe binutils-2.32.0-r0: task do_fetch: Started
+NOTE: recipe diffutils-3.7-r0: task do_fetch: Succeeded
+NOTE: Running task 115 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/python/python3-pygobject_3.34.0.bb:do_fetch)
+NOTE: recipe nfs-export-root-1.0-r1: task do_fetch: Started
+NOTE: recipe nfs-export-root-1.0-r1: task do_fetch: Succeeded
+NOTE: Running task 116 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/python/python3-dbus_1.2.12.bb:do_fetch)
+NOTE: recipe xinit-1_1.4.1-r0: task do_fetch: Succeeded
+NOTE: Running task 117 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/sysvinit/sysvinit-inittab_2.88dsf.bb:do_fetch)
+NOTE: recipe python3-pygobject-3.34.0-r0: task do_fetch: Started
+NOTE: recipe python3-dbus-1.2.12-r0: task do_fetch: Started
+NOTE: recipe sysvinit-inittab-2.88dsf-r10: task do_fetch: Started
+NOTE: recipe sysvinit-inittab-2.88dsf-r10: task do_fetch: Succeeded
+NOTE: Running task 118 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/zip/zip_3.0.bb:do_fetch)
+NOTE: recipe zip-3.0-r2: task do_fetch: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_fetch: Succeeded
+NOTE: Running task 119 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/timezone/tzcode-native.bb:do_fetch)
+NOTE: recipe libxkbfile-1_1.1.0-r0: task do_fetch: Succeeded
+NOTE: Running task 120 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/gmp/gmp_6.1.2.bb:do_fetch)
+NOTE: recipe xtrans-native-1_1.4.0-r0: task do_fetch: Succeeded
+NOTE: Running task 121 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/unifdef/unifdef_2.11.bb:do_fetch)
+NOTE: recipe socat-1.7.3.3-r0: task do_fetch: Succeeded
+NOTE: recipe tzcode-native-2019c-r0: task do_fetch: Started
+NOTE: Running task 122 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/libedit/libedit_20190324-3.1.bb:do_fetch)
+NOTE: recipe libpcap-1.9.1-r0: task do_fetch: Succeeded
+NOTE: Running task 123 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-gnome/gnome/gconf_3.2.6.bb:do_fetch)
+NOTE: recipe gmp-6.1.2-r0: task do_fetch: Started
+NOTE: recipe unifdef-native-2.11-r0: task do_fetch: Started
+NOTE: recipe xset-1_1.2.4-r0: task do_fetch: Succeeded
+NOTE: Running task 124 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/libfakekey/libfakekey_git.bb:do_fetch)
+NOTE: recipe libedit-native-20190324-3.1-r0: task do_fetch: Started
+NOTE: recipe gconf-native-3.2.6-r0: task do_fetch: Started
+NOTE: recipe libfakekey-0.3+gitAUTOINC+7ad885912e-r0: task do_fetch: Started
+NOTE: recipe unifdef-native-2.11-r0: task do_fetch: Succeeded
+NOTE: Running task 125 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-sato/matchbox-panel-2/matchbox-panel-2_2.11.bb:do_fetch)
+NOTE: recipe matchbox-panel-2-2.11-r0: task do_fetch: Started
+NOTE: recipe procps-3.3.15-r0: task do_fetch: Succeeded
+NOTE: Running task 126 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libfm/libfm_1.3.1.bb:do_fetch)
+NOTE: recipe xinput-calibrator-0.7.5+gitAUTOINC+03dadf5510-r6: task do_fetch: Succeeded
+NOTE: Running task 127 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/vte/vte_0.56.3.bb:do_fetch)
+NOTE: recipe libfm-1.3.1-r0: task do_fetch: Started
+NOTE: recipe vte-0.56.3-r0: task do_fetch: Started
+NOTE: recipe libfontenc-1_1.1.4-r0: task do_fetch: Succeeded
+NOTE: recipe libfontenc-native-1_1.1.4-r0: task do_fetch: Succeeded
+NOTE: Running task 128 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/libmatchbox/libmatchbox_1.12.bb:do_fetch)
+NOTE: Running task 129 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-gnome/gnome/gconf_3.2.6.bb:do_fetch)
+NOTE: recipe libfakekey-0.3+gitAUTOINC+7ad885912e-r0: task do_fetch: Succeeded
+NOTE: Running task 130 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libgpg-error/libgpg-error_1.36.bb:do_fetch)
+NOTE: recipe libmatchbox-1.12-r0: task do_fetch: Started
+NOTE: recipe libedit-native-20190324-3.1-r0: task do_fetch: Succeeded
+NOTE: Running task 131 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/npth/npth_1.6.bb:do_fetch)
+NOTE: recipe gconf-3.2.6-r0: task do_fetch: Started
+NOTE: recipe libgpg-error-1.36-r0: task do_fetch: Started
+NOTE: recipe libgpg-error-1.36-r0: task do_fetch: Succeeded
+NOTE: Running task 132 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libksba/libksba_1.3.5.bb:do_fetch)
+NOTE: recipe npth-1.6-r0: task do_fetch: Started
+NOTE: recipe libksba-1.3.5-r0: task do_fetch: Started
+NOTE: recipe libxcb-native-1.13.1-r0: task do_fetch: Succeeded
+NOTE: Running task 133 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libassuan/libassuan_2.5.3.bb:do_fetch)
+NOTE: recipe xhost-1_1.0.8-r0: task do_fetch: Succeeded
+NOTE: Running task 134 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-gnome/librsvg/librsvg_2.40.20.bb:do_fetch)
+NOTE: recipe libassuan-2.5.3-r0: task do_fetch: Started
+NOTE: recipe libassuan-2.5.3-r0: task do_fetch: Succeeded
+NOTE: Running task 135 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/quota/quota_4.05.bb:do_fetch)
+NOTE: recipe xdpyinfo-1_1.3.2-r0: task do_fetch: Succeeded
+NOTE: Running task 136 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/libsamplerate/libsamplerate0_0.1.9.bb:do_fetch)
+NOTE: recipe librsvg-native-2.40.20-r0: task do_fetch: Started
+NOTE: recipe quota-4.05-r0: task do_fetch: Started
+NOTE: recipe libpcre2-10.33-r0: task do_fetch: Succeeded
+NOTE: Running task 137 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-connectivity/mobile-broadband-provider-info/mobile-broadband-provider-info_git.bb:do_fetch)
+NOTE: recipe bc-1.07.1-r0: task do_fetch: Succeeded
+NOTE: Running task 138 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/ell/ell_0.22.bb:do_fetch)
+NOTE: recipe libsamplerate0-0.1.9-r1: task do_fetch: Started
+NOTE: recipe python3-pygobject-3.34.0-r0: task do_fetch: Succeeded
+NOTE: Running task 139 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libical/libical_3.0.6.bb:do_fetch)
+NOTE: recipe ell-0.22-r0: task do_fetch: Started
+NOTE: recipe mobile-broadband-provider-info-1_20190618-r0: task do_fetch: Started
+NOTE: recipe libical-3.0.6-r0: task do_fetch: Started
+NOTE: recipe xf86-video-fbdev-2_0.5.0-r0: task do_fetch: Succeeded
+NOTE: Running task 140 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libnl/libnl_3.5.0.bb:do_fetch)
+NOTE: recipe libnl-1_3.5.0-r0: task do_fetch: Started
+NOTE: recipe gconf-native-3.2.6-r0: task do_fetch: Succeeded
+NOTE: Running task 141 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-util/util-macros_1.19.2.bb:do_fetch)
+NOTE: recipe gconf-3.2.6-r0: task do_fetch: Succeeded
+NOTE: Running task 142 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/libsolv/libsolv_0.7.6.bb:do_fetch)
+NOTE: recipe orc-0.4.29-r0: task do_fetch: Succeeded
+NOTE: recipe orc-native-0.4.29-r0: task do_fetch: Succeeded
+NOTE: Running task 143 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/libmodulemd/libmodulemd_git.bb:do_fetch)
+NOTE: Running task 144 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libcheck/libcheck_0.12.0.bb:do_fetch)
+NOTE: recipe libsolv-0.7.6-r0: task do_fetch: Started
+NOTE: recipe util-macros-native-1_1.19.2-r0: task do_fetch: Started
+NOTE: recipe libmodulemd-2.6.0-r0: task do_fetch: Started
+NOTE: recipe libcheck-0.12.0-r0: task do_fetch: Started
+NOTE: recipe vte-0.56.3-r0: task do_fetch: Succeeded
+NOTE: Running task 145 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-gnome/gtk-doc/gtk-doc_1.31.bb:do_fetch)
+NOTE: recipe gtk-doc-1.31-r0: task do_fetch: Started
+NOTE: recipe libmatchbox-1.12-r0: task do_fetch: Succeeded
+NOTE: Running task 146 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/json-c/json-c_0.13.1.bb:do_fetch)
+NOTE: recipe json-c-0.13.1-r0: task do_fetch: Started
+NOTE: recipe xf86-video-vesa-2_2.4.0-r0: task do_fetch: Succeeded
+NOTE: Running task 147 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/lzo/lzo_2.10.bb:do_fetch)
+NOTE: recipe libice-native-1_1.0.10-r0: task do_fetch: Succeeded
+NOTE: Running task 148 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/attr/attr_2.4.47.bb:do_fetch)
+NOTE: recipe lzo-2.10-r0: task do_fetch: Started
+NOTE: recipe librsvg-native-2.40.20-r0: task do_fetch: Succeeded
+NOTE: Running task 149 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/attr/acl_2.2.52.bb:do_fetch)
+NOTE: recipe attr-2.4.47-r0: task do_fetch: Started
+NOTE: recipe acl-2.2.52-r0: task do_fetch: Started
+NOTE: recipe ell-0.22-r0: task do_fetch: Succeeded
+NOTE: Running task 150 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/gdbm/gdbm_1.18.1.bb:do_fetch)
+NOTE: recipe libxmu-1_1.1.3-r0: task do_fetch: Succeeded
+NOTE: Running task 151 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/readline/readline_8.0.bb:do_fetch)
+NOTE: recipe gdbm-1.18.1-r0: task do_fetch: Started
+NOTE: recipe readline-8.0-r0: task do_fetch: Started
+NOTE: recipe xmodmap-1_1.0.10-r0: task do_fetch: Succeeded
+NOTE: Running task 152 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/libnsl/libnsl2_git.bb:do_fetch)
+NOTE: recipe speex-1.2.0-r0: task do_fetch: Succeeded
+NOTE: Running task 153 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/libxcrypt/libxcrypt_4.4.8.bb:do_fetch)
+NOTE: recipe xauth-1_1.1-r0: task do_fetch: Succeeded
+NOTE: recipe libnsl2-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_fetch: Started
+NOTE: Running task 154 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/libtirpc/libtirpc_1.1.4.bb:do_fetch)
+NOTE: recipe libxcrypt-4.4.8-r0: task do_fetch: Started
+NOTE: recipe libtirpc-1.1.4-r0: task do_fetch: Started
+NOTE: recipe npth-1.6-r0: task do_fetch: Succeeded
+NOTE: Running task 155 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/p11-kit/p11-kit_0.23.16.1.bb:do_fetch)
+NOTE: recipe p11-kit-0.23.16.1-r0: task do_fetch: Started
+NOTE: recipe libxv-1.0.11-r0: task do_fetch: Succeeded
+NOTE: Running task 156 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libxslt/libxslt_1.1.33.bb:do_fetch)
+NOTE: recipe util-macros-native-1_1.19.2-r0: task do_fetch: Succeeded
+NOTE: Running task 157 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libdaemon/libdaemon_0.14.bb:do_fetch)
+NOTE: recipe libdaemon-0.14-r0: task do_fetch: Started
+NOTE: recipe libxslt-native-1.1.33-r0: task do_fetch: Started
+NOTE: recipe gtk-doc-1.31-r0: task do_fetch: Succeeded
+NOTE: Running task 158 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libgcrypt/libgcrypt_1.8.4.bb:do_fetch)
+NOTE: recipe libxinerama-1_1.1.4-r0: task do_fetch: Succeeded
+NOTE: Running task 159 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/libvorbis/libvorbis_1.3.6.bb:do_fetch)
+NOTE: recipe libgcrypt-1.8.4-r0: task do_fetch: Started
+NOTE: recipe libvorbis-1.3.6-r0: task do_fetch: Started
+NOTE: recipe attr-2.4.47-r0: task do_fetch: Succeeded
+NOTE: recipe matchbox-panel-2-2.11-r0: task do_fetch: Succeeded
+NOTE: Running task 160 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/gstreamer/gstreamer1.0-plugins-base_1.16.1.bb:do_fetch)
+NOTE: Running task 161 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/gstreamer/gstreamer1.0-plugins-bad_1.16.1.bb:do_fetch)
+NOTE: recipe gstreamer1.0-plugins-base-1.16.1-r0: task do_fetch: Started
+NOTE: recipe gstreamer1.0-plugins-bad-1.16.1-r0: task do_fetch: Started
+NOTE: recipe libsm-native-1_1.2.3-r0: task do_fetch: Succeeded
+NOTE: Running task 162 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-gnome/librsvg/librsvg_2.40.20.bb:do_fetch)
+NOTE: recipe flex-2.6.0-r0: task do_fetch: Succeeded
+NOTE: Running task 163 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/enchant/enchant_1.6.0.bb:do_fetch)
+NOTE: recipe librsvg-2.40.20-r0: task do_fetch: Started
+NOTE: recipe enchant-1.6.0-r3: task do_fetch: Started
+NOTE: recipe librsvg-2.40.20-r0: task do_fetch: Succeeded
+NOTE: Running task 164 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/gstreamer/gstreamer1.0_1.16.1.bb:do_fetch)
+NOTE: recipe gstreamer1.0-1.16.1-r0: task do_fetch: Started
+NOTE: recipe xf86-video-cirrus-2_1.5.3-r0: task do_fetch: Succeeded
+NOTE: Running task 165 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/libtheora/libtheora_1.1.1.bb:do_fetch)
+NOTE: recipe libdaemon-0.14-r0: task do_fetch: Succeeded
+NOTE: Running task 166 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-gnome/libsecret/libsecret_0.19.0.bb:do_fetch)
+NOTE: recipe libtheora-1.1.1-r1: task do_fetch: Started
+NOTE: recipe libcheck-0.12.0-r0: task do_fetch: Succeeded
+NOTE: Running task 167 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/libidn/libidn_1.35.bb:do_fetch)
+NOTE: recipe tzcode-native-2019c-r0: task do_fetch: Succeeded
+NOTE: Running task 168 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/gnutls/libtasn1_4.14.bb:do_fetch)
+NOTE: recipe libsecret-0.19.0-r0: task do_fetch: Started
+NOTE: recipe libidn-1.35-r0: task do_fetch: Started
+NOTE: recipe libtasn1-4.14-r0: task do_fetch: Started
+NOTE: recipe acl-2.2.52-r0: task do_fetch: Succeeded
+NOTE: Running task 169 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/gawk/gawk_5.0.1.bb:do_fetch)
+NOTE: recipe gawk-5.0.1-r0: task do_fetch: Started
+NOTE: recipe libxft-native-1_2.3.3-r0: task do_fetch: Succeeded
+NOTE: Running task 170 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/vala/vala_0.44.7.bb:do_fetch)
+NOTE: recipe vala-0.44.7-r0: task do_fetch: Started
+NOTE: recipe libksba-1.3.5-r0: task do_fetch: Succeeded
+NOTE: Running task 171 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/vala/vala_0.44.7.bb:do_fetch)
+NOTE: recipe gmp-6.1.2-r0: task do_fetch: Succeeded
+NOTE: Running task 172 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libpsl/libpsl_0.21.0.bb:do_fetch)
+NOTE: recipe libpsl-0.21.0-r0: task do_fetch: Started
+NOTE: recipe vala-native-0.44.7-r0: task do_fetch: Started
+NOTE: recipe libcap-ng-0.7.9-r0: task do_fetch: Succeeded
+NOTE: Running task 173 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta-rust/recipes-devtools/rust/rust-llvm_1.37.0.bb:do_fetch)
+NOTE: recipe libinput-1.14.1-r0: task do_fetch: Succeeded
+NOTE: Running task 174 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxdmcp_1.1.3.bb:do_fetch)
+NOTE: recipe libxdmcp-1_1.1.3-r0: task do_fetch: Started
+NOTE: recipe rust-llvm-native-1.37.0-r0: task do_fetch: Started
+NOTE: recipe json-c-0.13.1-r0: task do_fetch: Succeeded
+NOTE: Running task 175 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta-rust/recipes-devtools/rust/rust_1.37.0.bb:do_fetch)
+NOTE: recipe rust-native-1.37.0-r0: task do_fetch: Started
+NOTE: recipe lame-3.100-r0: task do_fetch: Succeeded
+NOTE: Running task 176 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/ca-certificates/ca-certificates_20190110.bb:do_fetch)
+NOTE: recipe ca-certificates-native-20190110-r0: task do_fetch: Started
+NOTE: recipe menu-cache-1.1.0-r0: task do_fetch: Succeeded
+NOTE: Running task 177 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta-openembedded/meta-oe/recipes-support/libssh2/libssh2_1.8.2.bb:do_fetch)
+NOTE: recipe libssh2-native-1.8.2-r0: task do_fetch: Started
+NOTE: recipe libsecret-0.19.0-r0: task do_fetch: Succeeded
+NOTE: Running task 178 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta-openembedded/meta-oe/recipes-support/libgit2/libgit2_0.28.3.bb:do_fetch)
+NOTE: recipe libical-3.0.6-r0: task do_fetch: Succeeded
+NOTE: Running task 179 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libcroco/libcroco_0.6.13.bb:do_fetch)
+NOTE: recipe libgit2-native-0.28.3-r0: task do_fetch: Started
+NOTE: recipe libcroco-0.6.13-r0: task do_fetch: Started
+NOTE: recipe libcroco-0.6.13-r0: task do_fetch: Succeeded
+NOTE: Running task 180 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/dbus/dbus-glib_0.110.bb:do_fetch)
+NOTE: recipe dbus-glib-native-0.110-r0: task do_fetch: Started
+NOTE: recipe libgcrypt-native-1.8.4-r0: task do_fetch: Succeeded
+NOTE: Running task 181 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/libidn/libidn2_2.2.0.bb:do_fetch)
+NOTE: recipe libgcrypt-1.8.4-r0: task do_fetch: Succeeded
+NOTE: Running task 182 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/gnutls/gnutls_3.6.8.bb:do_fetch)
+NOTE: recipe libidn2-2.2.0-r0: task do_fetch: Started
+NOTE: recipe gnutls-3.6.8-r0: task do_fetch: Started
+NOTE: recipe freetype-native-2.10.1-r0: task do_fetch: Succeeded
+NOTE: Running task 183 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/xcb-util_0.4.0.bb:do_fetch)
+NOTE: recipe xcb-util-0.4.0-r0: task do_fetch: Started
+NOTE: recipe libssh2-native-1.8.2-r0: task do_fetch: Succeeded
+NOTE: Running task 184 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/autoconf-archive/autoconf-archive_2019.01.06.bb:do_fetch)
+NOTE: recipe lzo-2.10-r0: task do_fetch: Succeeded
+NOTE: Running task 185 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/atk/at-spi2-atk_2.32.0.bb:do_fetch)
+NOTE: recipe libxdmcp-native-1_1.1.3-r0: task do_fetch: Succeeded
+NOTE: recipe libxdmcp-1_1.1.3-r0: task do_fetch: Succeeded
+NOTE: Running task 186 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/libepoxy/libepoxy_1.5.3.bb:do_fetch)
+NOTE: Running noexec task 187 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta-clang/recipes-devtools/clang/clang_git.bb:do_fetch)
+NOTE: Running task 188 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta-clang/recipes-devtools/clang/llvm-project-source.bb:do_fetch)
+NOTE: recipe autoconf-archive-2019.01.06-r0: task do_fetch: Started
+NOTE: recipe at-spi2-atk-2.32.0-r0: task do_fetch: Started
+NOTE: recipe llvm-project-source-9.0.1-9.0.1-r0: task do_fetch: Started
+NOTE: recipe libepoxy-1.5.3-r0: task do_fetch: Started
+NOTE: recipe python3-dbus-1.2.12-r0: task do_fetch: Succeeded
+NOTE: Running task 189 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/libogg/libogg_1.3.4.bb:do_fetch)
+NOTE: recipe libogg-1.3.4-r0: task do_fetch: Started
+NOTE: recipe xf86-video-vmware-2_13.3.0-r0: task do_fetch: Succeeded
+NOTE: Running task 190 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/xmlto/xmlto_0.0.28.bb:do_fetch)
+NOTE: recipe xmlto-native-0.0.28-r0: task do_fetch: Started
+NOTE: recipe nettle-3.5.1-r0: task do_fetch: Succeeded
+NOTE: Running task 191 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/python/python3-mako_1.1.0.bb:do_fetch)
+NOTE: recipe python3-mako-native-1.1.0-r0: task do_fetch: Started
+NOTE: recipe libevdev-1.8.0-r0: task do_fetch: Succeeded
+NOTE: Running task 192 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-util/makedepend_1.0.6.bb:do_fetch)
+NOTE: recipe makedepend-native-1_1.0.6-r0: task do_fetch: Started
+NOTE: recipe libnl-1_3.5.0-r0: task do_fetch: Succeeded
+NOTE: Running task 193 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-app/xrandr_1.5.1.bb:do_fetch)
+NOTE: recipe libepoxy-1.5.3-r0: task do_fetch: Succeeded
+NOTE: Running task 194 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxxf86vm_1.1.4.bb:do_fetch)
+NOTE: recipe xrandr-1_1.5.1-r0: task do_fetch: Started
+NOTE: recipe libxxf86vm-1_1.1.4-r0: task do_fetch: Started
+NOTE: recipe at-spi2-atk-2.32.0-r0: task do_fetch: Succeeded
+NOTE: Running task 195 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxshmfence_1.3.bb:do_fetch)
+NOTE: recipe libxshmfence-1.3-r0: task do_fetch: Started
+NOTE: recipe libnsl2-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_fetch: Succeeded
+NOTE: Running task 196 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/wayland/wayland_1.17.0.bb:do_fetch)
+NOTE: recipe wayland-1.17.0-r0: task do_fetch: Started
+NOTE: recipe python3-mako-native-1.1.0-r0: task do_fetch: Succeeded
+NOTE: Running task 197 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/wayland/wayland_1.17.0.bb:do_fetch)
+NOTE: recipe xmlto-native-0.0.28-r0: task do_fetch: Succeeded
+NOTE: Running task 198 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-proto/xorgproto_2019.1.bb:do_fetch)
+NOTE: recipe wayland-native-1.17.0-r0: task do_fetch: Started
+NOTE: recipe xorgproto-native-2019.1-r0: task do_fetch: Started
+NOTE: recipe libogg-1.3.4-r0: task do_fetch: Succeeded
+NOTE: Running task 199 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/xtrans_1.4.0.bb:do_fetch)
+NOTE: recipe vala-0.44.7-r0: task do_fetch: Succeeded
+NOTE: recipe vala-native-0.44.7-r0: task do_fetch: Succeeded
+NOTE: Running task 200 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxcomposite_0.4.5.bb:do_fetch)
+NOTE: Running task 201 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxdamage_1.1.5.bb:do_fetch)
+NOTE: recipe bison-3.4.1-r0: task do_fetch: Succeeded
+NOTE: Running task 202 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/fontconfig/fontconfig_2.13.1.bb:do_fetch)
+NOTE: recipe xtrans-1_1.4.0-r0: task do_fetch: Started
+NOTE: recipe xtrans-1_1.4.0-r0: task do_fetch: Succeeded
+NOTE: Running task 203 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/atk/atk_2.32.0.bb:do_fetch)
+NOTE: recipe libxdamage-native-1_1.1.5-r0: task do_fetch: Started
+NOTE: recipe libxcomposite-native-1_0.4.5-r0: task do_fetch: Started
+NOTE: recipe fontconfig-native-2.13.1-r0: task do_fetch: Started
+NOTE: recipe atk-native-2.32.0-r0: task do_fetch: Started
+NOTE: recipe enchant-1.6.0-r3: task do_fetch: Succeeded
+NOTE: Running task 204 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxext_1.3.4.bb:do_fetch)
+NOTE: recipe libxext-native-1_1.3.4-r0: task do_fetch: Started
+NOTE: recipe libfm-extra-1.3.1-r0: task do_fetch: Succeeded
+NOTE: Running task 205 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxrandr_1.5.2.bb:do_fetch)
+NOTE: recipe libfm-1.3.1-r0: task do_fetch: Succeeded
+NOTE: Running task 206 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/cairo/cairo_1.16.0.bb:do_fetch)
+NOTE: recipe libxrandr-native-1_1.5.2-r0: task do_fetch: Started
+NOTE: recipe cairo-native-1.16.0-r0: task do_fetch: Started
+NOTE: recipe atk-native-2.32.0-r0: task do_fetch: Succeeded
+NOTE: Running task 207 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/pango/pango_1.44.6.bb:do_fetch)
+NOTE: recipe pango-native-1.44.6-r0: task do_fetch: Started
+NOTE: recipe wayland-1.17.0-r0: task do_fetch: Succeeded
+NOTE: recipe wayland-native-1.17.0-r0: task do_fetch: Succeeded
+NOTE: Running task 208 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxi_1.7.10.bb:do_fetch)
+NOTE: Running task 209 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libx11_1.6.8.bb:do_fetch)
+NOTE: recipe libxi-native-1_1.7.10-r0: task do_fetch: Started
+NOTE: recipe libx11-native-1_1.6.8-r0: task do_fetch: Started
+NOTE: recipe makedepend-native-1_1.0.6-r0: task do_fetch: Succeeded
+NOTE: Running task 210 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxcursor_1.2.0.bb:do_fetch)
+NOTE: recipe libxcursor-native-1_1.2.0-r0: task do_fetch: Started
+NOTE: recipe quota-4.05-r0: task do_fetch: Succeeded
+NOTE: Running task 211 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxrender_0.9.10.bb:do_fetch)
+NOTE: recipe libxrender-native-1_0.9.10-r0: task do_fetch: Started
+NOTE: recipe zip-3.0-r2: task do_fetch: Succeeded
+NOTE: Running task 212 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/atk/at-spi2-atk_2.32.0.bb:do_fetch)
+NOTE: recipe at-spi2-atk-native-2.32.0-r0: task do_fetch: Started
+NOTE: recipe at-spi2-atk-native-2.32.0-r0: task do_fetch: Succeeded
+NOTE: Running task 213 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxfixes_5.0.3.bb:do_fetch)
+NOTE: recipe libxfixes-native-1_5.0.3-r0: task do_fetch: Started
+NOTE: recipe libexif-0.6.21-r0: task do_fetch: Succeeded
+NOTE: Running task 214 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/jpeg/libjpeg-turbo_2.0.3.bb:do_fetch)
+NOTE: recipe libjpeg-turbo-native-1_2.0.3-r0: task do_fetch: Started
+NOTE: recipe libtirpc-1.1.4-r0: task do_fetch: Succeeded
+NOTE: Running task 215 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libpcre/libpcre_8.43.bb:do_fetch)
+NOTE: recipe m4-1.4.18-r0: task do_fetch: Succeeded
+NOTE: Running task 216 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libffi/libffi_3.3~rc0.bb:do_fetch)
+NOTE: recipe libpcre-8.43-r0: task do_fetch: Started
+NOTE: recipe libffi-3.3~rc0-r0: task do_fetch: Started
+NOTE: recipe xrandr-1_1.5.1-r0: task do_fetch: Succeeded
+NOTE: Running task 217 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/util-linux/util-linux_2.34.bb:do_fetch)
+NOTE: recipe util-linux-2.34-r0: task do_fetch: Started
+NOTE: recipe libusb1-1.0.22-r0: task do_fetch: Succeeded
+NOTE: Running task 218 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libpthread-stubs_0.4.bb:do_fetch)
+NOTE: recipe libpthread-stubs-0.4-r0: task do_fetch: Started
+NOTE: recipe libpthread-stubs-0.4-r0: task do_fetch: Succeeded
+NOTE: Running task 219 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libpciaccess_0.16.bb:do_fetch)
+NOTE: recipe gdbm-1.18.1-r0: task do_fetch: Succeeded
+NOTE: Running task 220 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/libsndfile/libsndfile1_1.0.28.bb:do_fetch)
+NOTE: recipe libpciaccess-0.16-r0: task do_fetch: Started
+NOTE: recipe pango-native-1.44.6-r0: task do_fetch: Succeeded
+NOTE: Running task 221 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libatomic-ops/libatomic-ops_7.6.10.bb:do_fetch)
+NOTE: recipe libxext-native-1_1.3.4-r0: task do_fetch: Succeeded
+NOTE: recipe xcb-util-0.4.0-r0: task do_fetch: Succeeded
+NOTE: Running task 222 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/shadow/shadow_4.6.bb:do_fetch)
+NOTE: Running task 223 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/sbc/sbc_1.4.bb:do_fetch)
+NOTE: recipe libsndfile1-1.0.28-r0: task do_fetch: Started
+NOTE: recipe libatomic-ops-7.6.10-r0: task do_fetch: Started
+NOTE: recipe sbc-1.4-r0: task do_fetch: Started
+NOTE: recipe shadow-4.6-r0: task do_fetch: Started
+NOTE: recipe libxcomposite-native-1_0.4.5-r0: task do_fetch: Succeeded
+NOTE: Running task 224 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libice_1.0.10.bb:do_fetch)
+NOTE: recipe libice-1_1.0.10-r0: task do_fetch: Started
+NOTE: recipe libice-1_1.0.10-r0: task do_fetch: Succeeded
+NOTE: Running task 225 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/speex/speexdsp_1.2rc3.bb:do_fetch)
+NOTE: recipe speexdsp-1.2rc3-r0: task do_fetch: Started
+NOTE: recipe sbc-1.4-r0: task do_fetch: Succeeded
+NOTE: Running task 226 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/libtool/libtool_2.4.6.bb:do_fetch)
+NOTE: recipe libtool-2.4.6-r0: task do_fetch: Started
+NOTE: recipe grep-3.3-r0: task do_fetch: Succeeded
+NOTE: Running task 227 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/intltool/intltool_0.51.0.bb:do_fetch)
+NOTE: recipe intltool-native-0.51.0-r0: task do_fetch: Started
+NOTE: recipe encodings-1_1.0.5-r2.1: task do_fetch: Succeeded
+NOTE: Running task 228 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_fetch)
+NOTE: recipe shadow-sysroot-4.6-r3: task do_fetch: Started
+NOTE: recipe shadow-sysroot-4.6-r3: task do_fetch: Succeeded
+NOTE: Running task 229 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/shadow/shadow_4.6.bb:do_fetch)
+NOTE: recipe shadow-native-4.6-r0: task do_fetch: Started
+NOTE: recipe intltool-native-0.51.0-r0: task do_fetch: Succeeded
+NOTE: Running task 230 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta-qt5/recipes-qt/qt5/qtwebsockets_git.bb:do_fetch)
+NOTE: recipe qtwebsockets-5.13.2+gitAUTOINC+a8bbc05633-r0: task do_fetch: Started
+NOTE: recipe libxrandr-native-1_1.5.2-r0: task do_fetch: Succeeded
+NOTE: Running task 231 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta-qt5/recipes-qt/qt5/qtdeclarative_git.bb:do_fetch)
+NOTE: recipe qtdeclarative-native-5.13.2+gitAUTOINC+4080025fed-r0: task do_fetch: Started
+NOTE: recipe libxdamage-native-1_1.1.5-r0: task do_fetch: Succeeded
+NOTE: Running task 232 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/icu/icu_64.2.bb:do_fetch)
+NOTE: recipe icu-native-64.2-r0: task do_fetch: Started
+NOTE: recipe libxslt-native-1.1.33-r0: task do_fetch: Succeeded
+NOTE: Running task 233 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/harfbuzz/harfbuzz_2.6.1.bb:do_fetch)
+NOTE: recipe harfbuzz-2.6.1-r0: task do_fetch: Started
+WARNING: icu-native-64.2-r0 do_fetch: Checksum mismatch for local file /home/philippe/projects/test-oe-build-time/poky/build/downloads/icu4c-64_2-src.tgz
+Cleaning and trying again.
+WARNING: icu-native-64.2-r0 do_fetch: Renaming /home/philippe/projects/test-oe-build-time/poky/build/downloads/icu4c-64_2-src.tgz to /home/philippe/projects/test-oe-build-time/poky/build/downloads/icu4c-64_2-src.tgz_bad-checksum_667a356383ebc1094ca0d27e5d03b9bc
+WARNING: icu-native-64.2-r0 do_fetch: Checksum failure encountered with download of http://download.icu-project.org/files/icu4c/64.2/icu4c-64_2-src.tgz - will attempt other sources if available
+NOTE: recipe rust-llvm-native-1.37.0-r0: task do_fetch: Succeeded
+NOTE: Running task 234 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/fribidi/fribidi_1.0.5.bb:do_fetch)
+NOTE: recipe fribidi-1.0.5-r0: task do_fetch: Started
+NOTE: recipe libxxf86vm-1_1.1.4-r0: task do_fetch: Succeeded
+NOTE: Running task 235 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxft_2.3.3.bb:do_fetch)
+NOTE: recipe libxft-1_2.3.3-r0: task do_fetch: Started
+NOTE: recipe libxft-1_2.3.3-r0: task do_fetch: Succeeded
+NOTE: Running task 236 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-gnome/gobject-introspection/gobject-introspection_1.60.2.bb:do_fetch)
+NOTE: recipe gobject-introspection-1.60.2-r0: task do_fetch: Started
+NOTE: recipe libxcursor-native-1_1.2.0-r0: task do_fetch: Succeeded
+NOTE: Running task 237 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/xcb-util-renderutil_0.3.9.bb:do_fetch)
+NOTE: recipe xcb-util-renderutil-0.3.9-r0: task do_fetch: Started
+NOTE: recipe libsndfile1-1.0.28-r0: task do_fetch: Succeeded
+NOTE: Running task 238 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/xcb-util-image_0.4.0.bb:do_fetch)
+NOTE: recipe xcb-util-image-0.4.0-r0: task do_fetch: Started
+NOTE: recipe mobile-broadband-provider-info-1_20190618-r0: task do_fetch: Succeeded
+NOTE: Running task 239 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxkbcommon_0.8.4.bb:do_fetch)
+NOTE: recipe libxkbcommon-0.8.4-r0: task do_fetch: Started
+NOTE: recipe autoconf-archive-2019.01.06-r0: task do_fetch: Succeeded
+NOTE: Running task 240 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/xcb-util-keysyms_0.4.0.bb:do_fetch)
+NOTE: recipe xcb-util-keysyms-0.4.0-r0: task do_fetch: Started
+NOTE: recipe libatomic-ops-7.6.10-r0: task do_fetch: Succeeded
+NOTE: Running task 241 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/xcb-util-wm_0.4.1.bb:do_fetch)
+NOTE: recipe gobject-introspection-1.60.2-r0: task do_fetch: Succeeded
+NOTE: Running task 242 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libsm_1.2.3.bb:do_fetch)
+NOTE: recipe xcb-util-wm-0.4.1-r0: task do_fetch: Started
+NOTE: recipe libsm-1_1.2.3-r0: task do_fetch: Started
+NOTE: recipe libsm-1_1.2.3-r0: task do_fetch: Succeeded
+NOTE: Running task 243 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxcb_1.13.1.bb:do_fetch)
+NOTE: recipe libxrender-native-1_0.9.10-r0: task do_fetch: Succeeded
+NOTE: Running task 244 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/groff/groff_1.22.4.bb:do_fetch)
+NOTE: recipe libxcb-1.13.1-r0: task do_fetch: Started
+NOTE: recipe libxcb-1.13.1-r0: task do_fetch: Succeeded
+NOTE: Running task 245 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-proto/xorgproto_2019.1.bb:do_fetch)
+NOTE: recipe groff-native-1.22.4-r0: task do_fetch: Started
+NOTE: recipe xorgproto-2019.1-r0: task do_fetch: Started
+NOTE: recipe speexdsp-1.2rc3-r0: task do_fetch: Succeeded
+NOTE: Running task 246 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-util/util-macros_1.19.2.bb:do_fetch)
+NOTE: recipe libffi-3.3~rc0-r0: task do_fetch: Succeeded
+NOTE: Running noexec task 247 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/gcc/libgcc-initial_9.2.bb:do_fetch)
+NOTE: Running task 248 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/make/make_4.2.1.bb:do_fetch)
+NOTE: recipe util-macros-1_1.19.2-r0: task do_fetch: Started
+NOTE: recipe util-macros-1_1.19.2-r0: task do_fetch: Succeeded
+NOTE: Running task 249 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libpcre/libpcre_8.43.bb:do_fetch)
+NOTE: recipe make-native-4.2.1-r0: task do_fetch: Started
+NOTE: recipe libxshmfence-1.3-r0: task do_fetch: Succeeded
+NOTE: Running task 250 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libyaml/libyaml_0.2.2.bb:do_fetch)
+NOTE: recipe libpcre-native-8.43-r0: task do_fetch: Started
+NOTE: recipe libyaml-native-0.2.2-r0: task do_fetch: Started
+NOTE: recipe libyaml-native-0.2.2-r0: task do_fetch: Succeeded
+NOTE: Running task 251 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/swig/swig_3.0.12.bb:do_fetch)
+NOTE: recipe swig-native-3.0.12-r0: task do_fetch: Started
+NOTE: recipe libpcre-native-8.43-r0: task do_fetch: Succeeded
+NOTE: Running task 252 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-gnome/gobject-introspection/gobject-introspection_1.60.2.bb:do_fetch)
+NOTE: recipe libpcre-8.43-r0: task do_fetch: Succeeded
+NOTE: Running task 253 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/json-c/json-c_0.13.1.bb:do_fetch)
+NOTE: recipe json-c-native-0.13.1-r0: task do_fetch: Started
+NOTE: recipe json-c-native-0.13.1-r0: task do_fetch: Succeeded
+NOTE: Running task 254 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libcheck/libcheck_0.12.0.bb:do_fetch)
+NOTE: recipe gobject-introspection-native-1.60.2-r0: task do_fetch: Started
+NOTE: recipe gobject-introspection-native-1.60.2-r0: task do_fetch: Succeeded
+NOTE: Running task 255 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/re2c/re2c_1.0.1.bb:do_fetch)
+NOTE: recipe libcheck-native-0.12.0-r0: task do_fetch: Started
+NOTE: recipe libcheck-native-0.12.0-r0: task do_fetch: Succeeded
+NOTE: Running task 256 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/gpgme/gpgme_1.13.1.bb:do_fetch)
+NOTE: recipe re2c-native-1.0.1-r0: task do_fetch: Started
+NOTE: recipe gpgme-native-1.13.1-r0: task do_fetch: Started
+NOTE: recipe libxfixes-native-1_5.0.3-r0: task do_fetch: Succeeded
+NOTE: Running task 257 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/autoconf-archive/autoconf-archive_2019.01.06.bb:do_fetch)
+NOTE: recipe autoconf-archive-native-2019.01.06-r0: task do_fetch: Started
+NOTE: recipe autoconf-archive-native-2019.01.06-r0: task do_fetch: Succeeded
+NOTE: Running task 258 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/lzo/lzo_2.10.bb:do_fetch)
+NOTE: recipe lzo-native-2.10-r0: task do_fetch: Started
+NOTE: recipe lzo-native-2.10-r0: task do_fetch: Succeeded
+NOTE: Running task 259 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libcap-ng/libcap-ng_0.7.9.bb:do_fetch)
+NOTE: recipe libcap-ng-native-0.7.9-r0: task do_fetch: Started
+NOTE: recipe libcap-ng-native-0.7.9-r0: task do_fetch: Succeeded
+NOTE: Running task 260 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libmpc/libmpc_1.1.0.bb:do_fetch)
+NOTE: recipe libmpc-native-1.1.0-r0: task do_fetch: Started
+NOTE: recipe xcb-util-renderutil-0.3.9-r0: task do_fetch: Succeeded
+NOTE: Running task 261 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/gmp/gmp_6.1.2.bb:do_fetch)
+NOTE: recipe gmp-native-6.1.2-r0: task do_fetch: Started
+NOTE: recipe gmp-native-6.1.2-r0: task do_fetch: Succeeded
+NOTE: Running task 262 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/mpfr/mpfr_4.0.2.bb:do_fetch)
+NOTE: recipe mpfr-native-4.0.2-r0: task do_fetch: Started
+NOTE: recipe libpciaccess-0.16-r0: task do_fetch: Succeeded
+NOTE: Running task 263 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/gcc/gcc-source_9.2.bb:do_fetch)
+NOTE: recipe gcc-source-9.2.0-9.2.0-r0: task do_fetch: Started
+NOTE: recipe libxkbcommon-0.8.4-r0: task do_fetch: Succeeded
+NOTE: Running task 264 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/python/python3-six_1.12.0.bb:do_fetch)
+NOTE: recipe libtheora-1.1.1-r1: task do_fetch: Succeeded
+NOTE: Running task 265 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/sed/sed_4.2.2.bb:do_fetch)
+NOTE: recipe python3-six-1.12.0-r0: task do_fetch: Started
+NOTE: recipe sed-4.2.2-r0: task do_fetch: Started
+NOTE: recipe python3-six-1.12.0-r0: task do_fetch: Succeeded
+NOTE: Running task 266 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/unzip/unzip_6.0.bb:do_fetch)
+NOTE: recipe unzip-1_6.0-r5: task do_fetch: Started
+NOTE: recipe xcb-util-wm-0.4.1-r0: task do_fetch: Succeeded
+NOTE: Running task 267 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/glib-networking/glib-networking_2.60.3.bb:do_fetch)
+NOTE: recipe glib-networking-2.60.3-r0: task do_fetch: Started
+NOTE: recipe libxi-native-1_1.7.10-r0: task do_fetch: Succeeded
+NOTE: Running task 268 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta-openembedded/meta-oe/recipes-gnome/gnome-themes/gnome-themes-standard_3.28.bb:do_fetch)
+NOTE: recipe gnome-themes-standard-3.28-r0: task do_fetch: Started
+NOTE: recipe libunistring-0.9.10-r0: task do_fetch: Succeeded
+NOTE: Running task 269 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/ca-certificates/ca-certificates_20190110.bb:do_fetch)
+NOTE: recipe dbus-glib-native-0.110-r0: task do_fetch: Succeeded
+NOTE: Running task 270 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/make/make_4.2.1.bb:do_fetch)
+NOTE: recipe ca-certificates-20190110-r0: task do_fetch: Started
+NOTE: recipe make-4.2.1-r0: task do_fetch: Started
+NOTE: recipe aspell-0.60.7-r1: task do_fetch: Succeeded
+NOTE: Running task 271 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/dbus/dbus-test_1.12.16.bb:do_fetch)
+NOTE: recipe dbus-test-1.12.16-r0: task do_fetch: Started
+NOTE: recipe xcb-util-image-0.4.0-r0: task do_fetch: Succeeded
+NOTE: Running task 272 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/wayland/wayland-protocols_1.18.bb:do_fetch)
+NOTE: recipe wayland-protocols-1.18-r0: task do_fetch: Started
+NOTE: recipe xcb-util-keysyms-0.4.0-r0: task do_fetch: Succeeded
+NOTE: Running task 273 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-gnome/gdk-pixbuf/gdk-pixbuf_2.38.2.bb:do_fetch)
+NOTE: recipe gdk-pixbuf-2.38.2-r0: task do_fetch: Started
+NOTE: recipe glib-networking-2.60.3-r0: task do_fetch: Succeeded
+NOTE: Running task 274 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/shared-mime-info/shared-mime-info_1.10.bb:do_fetch)
+NOTE: recipe wayland-protocols-1.18-r0: task do_fetch: Succeeded
+NOTE: Running task 275 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/shared-mime-info/shared-mime-info_1.10.bb:do_fetch)
+NOTE: recipe shared-mime-info-native-1.10-r0: task do_fetch: Started
+NOTE: recipe shared-mime-info-1.10-r0: task do_fetch: Started
+NOTE: recipe libjpeg-turbo-native-1_2.0.3-r0: task do_fetch: Succeeded
+NOTE: Running task 276 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/timezone/tzdata.bb:do_fetch)
+NOTE: recipe tzdata-2019c-r0: task do_fetch: Started
+NOTE: recipe tzdata-2019c-r0: task do_fetch: Succeeded
+NOTE: Running task 277 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/coreutils/coreutils_8.31.bb:do_fetch)
+NOTE: recipe coreutils-8.31-r0: task do_fetch: Started
+NOTE: recipe gnome-themes-standard-3.28-r0: task do_fetch: Succeeded
+NOTE: Running task 278 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/consolekit/consolekit_0.4.6.bb:do_fetch)
+NOTE: recipe consolekit-0.4.6-r0: task do_fetch: Started
+NOTE: recipe gdk-pixbuf-2.38.2-r0: task do_fetch: Succeeded
+NOTE: Running task 279 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/alsa/alsa-plugins_1.1.9.bb:do_fetch)
+NOTE: recipe alsa-plugins-1.1.9-r0: task do_fetch: Started
+NOTE: recipe libtasn1-4.14-r0: task do_fetch: Succeeded
+NOTE: Running task 280 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/cantarell-fonts/cantarell-fonts_git.bb:do_fetch)
+NOTE: recipe cantarell-fonts-0.0.25-r0: task do_fetch: Started
+NOTE: recipe qtwebsockets-5.13.2+gitAUTOINC+a8bbc05633-r0: task do_fetch: Succeeded
+NOTE: Running task 281 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/gnome-desktop-testing/gnome-desktop-testing_2018.1.bb:do_fetch)
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_fetch: Started
+NOTE: recipe libsamplerate0-0.1.9-r1: task do_fetch: Succeeded
+NOTE: Running task 282 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/xkeyboard-config_2.27.bb:do_fetch)
+NOTE: recipe xkeyboard-config-2.27-r0: task do_fetch: Started
+NOTE: recipe fribidi-native-1.0.5-r0: task do_fetch: Succeeded
+NOTE: Running task 283 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/ptest-runner/ptest-runner_2.3.2.bb:do_fetch)
+NOTE: recipe fribidi-1.0.5-r0: task do_fetch: Succeeded
+NOTE: Running task 284 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-kernel/linux-libc-headers/linux-libc-headers_5.2.bb:do_fetch)
+NOTE: recipe ptest-runner-2.3.2+gitAUTOINC+7015e9199c-r0: task do_fetch: Started
+NOTE: recipe linux-libc-headers-5.2-r0: task do_fetch: Started
+NOTE: recipe xorgproto-native-2019.1-r0: task do_fetch: Succeeded
+NOTE: Running task 285 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/python/python3-six_1.12.0.bb:do_fetch)
+NOTE: recipe xorgproto-2019.1-r0: task do_fetch: Succeeded
+NOTE: Running task 286 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/m4/m4-native_1.4.18.bb:do_fetch)
+NOTE: recipe m4-native-1.4.18-r0: task do_fetch: Started
+NOTE: recipe m4-native-1.4.18-r0: task do_fetch: Succeeded
+NOTE: Running task 287 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-sato/l3afpad/l3afpad_git.bb:do_fetch)
+NOTE: recipe python3-six-native-1.12.0-r0: task do_fetch: Started
+NOTE: recipe python3-six-native-1.12.0-r0: task do_fetch: Succeeded
+NOTE: Running task 288 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-sato/shutdown-desktop/shutdown-desktop.bb:do_fetch)
+NOTE: recipe l3afpad-0.8.18.1.11+gitAUTOINC+3cdccdc950-r0: task do_fetch: Started
+NOTE: recipe shutdown-desktop-1.0-r1: task do_fetch: Started
+NOTE: recipe shutdown-desktop-1.0-r1: task do_fetch: Succeeded
+NOTE: Running task 289 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-sato/matchbox-desktop/matchbox-desktop_2.2.bb:do_fetch)
+NOTE: recipe matchbox-desktop-2.2-r0: task do_fetch: Started
+NOTE: recipe readline-8.0-r0: task do_fetch: Succeeded
+NOTE: Running task 290 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-sato/pulseaudio-sato/pulseaudio-client-conf-sato_1.bb:do_fetch)
+NOTE: recipe pulseaudio-client-conf-sato-1-r0: task do_fetch: Started
+NOTE: recipe pulseaudio-client-conf-sato-1-r0: task do_fetch: Succeeded
+NOTE: Running task 291 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-sato/sato-screenshot/sato-screenshot_0.3.bb:do_fetch)
+NOTE: recipe sato-screenshot-0.3-r0: task do_fetch: Started
+NOTE: recipe sato-screenshot-0.3-r0: task do_fetch: Succeeded
+NOTE: Running task 292 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-sato/matchbox-sato/matchbox-session-sato_0.1.bb:do_fetch)
+NOTE: recipe matchbox-session-sato-0.1-r30: task do_fetch: Started
+NOTE: recipe matchbox-session-sato-0.1-r30: task do_fetch: Succeeded
+NOTE: Running task 293 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/gstreamer/gst-examples_git.bb:do_fetch)
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_fetch: Succeeded
+NOTE: Running task 294 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-sato/matchbox-config-gtk/matchbox-config-gtk_0.2.bb:do_fetch)
+NOTE: recipe gst-examples-1.16.0-r0: task do_fetch: Started
+NOTE: recipe matchbox-config-gtk-0.2-r0: task do_fetch: Started
+NOTE: recipe libmpc-native-1.1.0-r0: task do_fetch: Succeeded
+NOTE: Running task 295 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/udev/udev-extraconf_1.1.bb:do_fetch)
+NOTE: recipe udev-extraconf-1.1-r0: task do_fetch: Started
+NOTE: recipe udev-extraconf-1.1-r0: task do_fetch: Succeeded
+NOTE: Running task 296 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-sato/puzzles/puzzles_git.bb:do_fetch)
+NOTE: recipe puzzles-2_0.0+gitAUTOINC+c6e0161dd4-r0: task do_fetch: Started
+NOTE: recipe matchbox-config-gtk-0.2-r0: task do_fetch: Succeeded
+NOTE: Running task 297 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-sato/settings-daemon/settings-daemon_0.0.2.bb:do_fetch)
+NOTE: recipe settings-daemon-0.0.2-r0: task do_fetch: Started
+NOTE: recipe alsa-plugins-1.1.9-r0: task do_fetch: Succeeded
+NOTE: Running task 298 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-connectivity/connman/connman-gnome_0.7.bb:do_fetch)
+NOTE: recipe connman-gnome-0.7-r0: task do_fetch: Started
+NOTE: recipe util-linux-2.34-r0: task do_fetch: Succeeded
+NOTE: Running task 299 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-sato/matchbox-keyboard/matchbox-keyboard_0.1.1.bb:do_fetch)
+NOTE: recipe matchbox-keyboard-0.1.1-r0: task do_fetch: Started
+NOTE: recipe ptest-runner-2.3.2+gitAUTOINC+7015e9199c-r0: task do_fetch: Succeeded
+NOTE: Running task 300 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xcursor-transparent-theme/xcursor-transparent-theme_git.bb:do_fetch)
+NOTE: recipe xcursor-transparent-theme-0.1.1+gitAUTOINC+23c8af5ba4-r0: task do_fetch: Started
+NOTE: recipe settings-daemon-0.0.2-r0: task do_fetch: Succeeded
+NOTE: Running task 301 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-sato/pcmanfm/pcmanfm_1.3.1.bb:do_fetch)
+NOTE: recipe pcmanfm-1.3.1-r0: task do_fetch: Started
+NOTE: recipe mpfr-native-4.0.2-r0: task do_fetch: Succeeded
+NOTE: Running task 302 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-sato/matchbox-terminal/matchbox-terminal_0.2.bb:do_fetch)
+NOTE: recipe xcursor-transparent-theme-0.1.1+gitAUTOINC+23c8af5ba4-r0: task do_fetch: Succeeded
+NOTE: Running task 303 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/matchbox-wm/matchbox-wm_1.2.2.bb:do_fetch)
+NOTE: recipe matchbox-terminal-0.2-r0: task do_fetch: Started
+NOTE: recipe matchbox-wm-1.2.2-r0: task do_fetch: Started
+NOTE: recipe consolekit-0.4.6-r0: task do_fetch: Succeeded
+NOTE: Running task 304 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/ttf-fonts/liberation-fonts_2.00.1.bb:do_fetch)
+NOTE: recipe liberation-fonts-1_2.00.1-r0: task do_fetch: Started
+NOTE: recipe matchbox-desktop-2.2-r0: task do_fetch: Succeeded
+NOTE: Running task 305 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/mini-x-session/mini-x-session_0.1.bb:do_fetch)
+NOTE: recipe shadow-native-4.6-r0: task do_fetch: Succeeded
+NOTE: recipe shadow-4.6-r0: task do_fetch: Succeeded
+NOTE: Running task 306 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/dropbear/dropbear_2019.78.bb:do_fetch)
+NOTE: Running task 307 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/gpgme/gpgme_1.13.1.bb:do_fetch)
+NOTE: recipe mini-x-session-0.1-r4: task do_fetch: Started
+NOTE: recipe mini-x-session-0.1-r4: task do_fetch: Succeeded
+NOTE: Running task 308 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/gnupg/gnupg_2.2.17.bb:do_fetch)
+NOTE: recipe matchbox-terminal-0.2-r0: task do_fetch: Succeeded
+NOTE: Running task 309 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/perl/perl_5.30.0.bb:do_fetch)
+NOTE: recipe dropbear-2019.78-r0: task do_fetch: Started
+NOTE: recipe gpgme-1.13.1-r0: task do_fetch: Started
+NOTE: recipe perl-5.30.0-r0: task do_fetch: Started
+NOTE: recipe gnupg-2.2.17-r0: task do_fetch: Started
+NOTE: recipe unzip-1_6.0-r5: task do_fetch: Succeeded
+NOTE: Running task 310 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-gnome/gnome/adwaita-icon-theme_3.32.0.bb:do_fetch)
+NOTE: recipe adwaita-icon-theme-3.32.0-r0: task do_fetch: Started
+NOTE: recipe matchbox-keyboard-0.1.1-r0: task do_fetch: Succeeded
+NOTE: Running task 311 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/bash/bash_5.0.bb:do_fetch)
+NOTE: recipe bash-5.0-r0: task do_fetch: Started
+NOTE: recipe libidn2-2.2.0-r0: task do_fetch: Succeeded
+NOTE: Running task 312 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-connectivity/wpa-supplicant/wpa-supplicant_2.9.bb:do_fetch)
+NOTE: recipe wpa-supplicant-2.9-r0: task do_fetch: Started
+NOTE: recipe pcmanfm-1.3.1-r0: task do_fetch: Succeeded
+NOTE: Running task 313 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/rpcbind/rpcbind_1.2.5.bb:do_fetch)
+NOTE: recipe libvorbis-1.3.6-r0: task do_fetch: Succeeded
+NOTE: Running task 314 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/alsa/alsa-utils_1.1.9.bb:do_fetch)
+NOTE: recipe rpcbind-1.2.5-r0: task do_fetch: Started
+NOTE: recipe alsa-utils-1.1.9-r0: task do_fetch: Started
+NOTE: recipe connman-gnome-0.7-r0: task do_fetch: Succeeded
+NOTE: Running task 315 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-bsp/alsa-state/alsa-state.bb:do_fetch)
+NOTE: recipe alsa-state-0.2.0-r5: task do_fetch: Started
+NOTE: recipe alsa-state-0.2.0-r5: task do_fetch: Succeeded
+NOTE: Running task 316 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-kernel/kmod/kmod_git.bb:do_fetch)
+NOTE: recipe kmod-26-r0: task do_fetch: Started
+NOTE: recipe rpcbind-1.2.5-r0: task do_fetch: Succeeded
+NOTE: Running task 317 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-connectivity/ofono/ofono_1.30.bb:do_fetch)
+NOTE: recipe ofono-1.30-r0: task do_fetch: Started
+NOTE: recipe gpgme-native-1.13.1-r0: task do_fetch: Succeeded
+NOTE: Running task 318 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-connectivity/libnss-mdns/libnss-mdns_0.10.bb:do_fetch)
+NOTE: recipe gpgme-1.13.1-r0: task do_fetch: Succeeded
+NOTE: Running task 319 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-connectivity/iw/iw_5.3.bb:do_fetch)
+NOTE: recipe gnutls-3.6.8-r0: task do_fetch: Succeeded
+NOTE: Running task 320 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-kernel/wireless-regdb/wireless-regdb_2019.06.03.bb:do_fetch)
+NOTE: recipe wireless-regdb-2019.06.03-r0: task do_fetch: Started
+NOTE: recipe iw-5.3-r0: task do_fetch: Started
+NOTE: recipe libnss-mdns-0.10-r7: task do_fetch: Started
+NOTE: recipe wireless-regdb-2019.06.03-r0: task do_fetch: Succeeded
+NOTE: Running task 321 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-connectivity/bluez5/bluez5_5.50.bb:do_fetch)
+NOTE: recipe bluez5-5.50-r0: task do_fetch: Started
+NOTE: recipe libnss-mdns-0.10-r7: task do_fetch: Succeeded
+NOTE: Running task 322 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-connectivity/neard/neard_0.16.bb:do_fetch)
+NOTE: recipe neard-0.16-r0: task do_fetch: Started
+NOTE: recipe iw-5.3-r0: task do_fetch: Succeeded
+NOTE: Running task 323 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/netbase/netbase_5.6.bb:do_fetch)
+NOTE: recipe netbase-1_5.6-r0: task do_fetch: Started
+NOTE: recipe neard-0.16-r0: task do_fetch: Succeeded
+NOTE: recipe netbase-1_5.6-r0: task do_fetch: Succeeded
+NOTE: Running task 324 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/base-files/base-files_3.0.14.bb:do_fetch)
+NOTE: Running task 325 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-bsp/v86d/v86d_0.1.10.bb:do_fetch)
+NOTE: recipe base-files-3.0.14-r89: task do_fetch: Started
+NOTE: recipe v86d-0.1.10-r2: task do_fetch: Started
+NOTE: recipe base-files-3.0.14-r89: task do_fetch: Succeeded
+NOTE: Running task 326 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/base-passwd/base-passwd_3.5.29.bb:do_fetch)
+NOTE: recipe base-passwd-3.5.29-r0: task do_fetch: Started
+NOTE: recipe v86d-0.1.10-r2: task do_fetch: Succeeded
+NOTE: Running task 327 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/init-ifupdown/init-ifupdown_1.0.bb:do_fetch)
+NOTE: recipe init-ifupdown-1.0-r7: task do_fetch: Started
+NOTE: recipe init-ifupdown-1.0-r7: task do_fetch: Succeeded
+NOTE: Running task 328 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/sysvinit/sysvinit_2.88dsf.bb:do_fetch)
+NOTE: recipe sysvinit-2.88dsf-r14: task do_fetch: Started
+NOTE: recipe base-passwd-3.5.29-r0: task do_fetch: Succeeded
+NOTE: Running task 329 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-kernel/modutils-initscripts/modutils-initscripts.bb:do_fetch)
+NOTE: recipe modutils-initscripts-1.0-r7: task do_fetch: Started
+NOTE: recipe modutils-initscripts-1.0-r7: task do_fetch: Succeeded
+NOTE: Running task 330 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/udev/eudev_3.2.8.bb:do_fetch)
+NOTE: recipe eudev-3.2.8-r0: task do_fetch: Started
+NOTE: recipe shared-mime-info-native-1.10-r0: task do_fetch: Succeeded
+NOTE: Running task 331 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/busybox/busybox_1.31.0.bb:do_fetch)
+NOTE: recipe shared-mime-info-1.10-r0: task do_fetch: Succeeded
+NOTE: Running task 332 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/debianutils/debianutils_4.8.6.3.bb:do_fetch)
+NOTE: recipe busybox-1.31.0-r0: task do_fetch: Started
+NOTE: recipe debianutils-native-4.8.6.3-r0: task do_fetch: Started
+NOTE: recipe ofono-1.30-r0: task do_fetch: Succeeded
+NOTE: Running task 333 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/python/python3-setuptools_41.2.0.bb:do_fetch)
+NOTE: recipe python3-setuptools-native-41.2.0-r0: task do_fetch: Started
+NOTE: recipe sysvinit-2.88dsf-r14: task do_fetch: Succeeded
+NOTE: Running task 334 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/pixman_0.38.4.bb:do_fetch)
+NOTE: recipe pixman-native-1_0.38.4-r0: task do_fetch: Started
+NOTE: recipe sed-4.2.2-r0: task do_fetch: Succeeded
+NOTE: Running task 335 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/libsdl2/libsdl2_2.0.10.bb:do_fetch)
+NOTE: recipe libsdl2-native-2.0.10-r0: task do_fetch: Started
+NOTE: recipe debianutils-native-4.8.6.3-r0: task do_fetch: Succeeded
+NOTE: Running task 336 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-kernel/dtc/dtc_1.5.1.bb:do_fetch)
+NOTE: recipe dtc-native-1.5.1-r0: task do_fetch: Started
+NOTE: recipe dropbear-2019.78-r0: task do_fetch: Succeeded
+NOTE: Running task 337 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/alsa/alsa-lib_1.1.9.bb:do_fetch)
+NOTE: recipe alsa-lib-native-1.1.9-r0: task do_fetch: Started
+NOTE: recipe python3-setuptools-native-41.2.0-r0: task do_fetch: Succeeded
+NOTE: Running task 338 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/libnsl/libnsl2_git.bb:do_fetch)
+NOTE: recipe libnsl2-native-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_fetch: Started
+NOTE: recipe libnsl2-native-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_fetch: Succeeded
+NOTE: Running task 339 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libffi/libffi_3.3~rc0.bb:do_fetch)
+NOTE: recipe libffi-native-3.3~rc0-r0: task do_fetch: Started
+NOTE: recipe libffi-native-3.3~rc0-r0: task do_fetch: Succeeded
+NOTE: Running task 340 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/readline/readline_8.0.bb:do_fetch)
+NOTE: recipe readline-native-8.0-r0: task do_fetch: Started
+NOTE: recipe readline-native-8.0-r0: task do_fetch: Succeeded
+NOTE: Running task 341 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/libtirpc/libtirpc_1.1.4.bb:do_fetch)
+NOTE: recipe libtirpc-native-1.1.4-r0: task do_fetch: Started
+NOTE: recipe libtirpc-native-1.1.4-r0: task do_fetch: Succeeded
+NOTE: Running task 342 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/gdbm/gdbm_1.18.1.bb:do_fetch)
+NOTE: recipe gdbm-native-1.18.1-r0: task do_fetch: Started
+NOTE: recipe gdbm-native-1.18.1-r0: task do_fetch: Succeeded
+NOTE: Running task 343 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/zlib/zlib_1.2.11.bb:do_fetch)
+NOTE: recipe zlib-1.2.11-r0: task do_fetch: Started
+NOTE: recipe make-native-4.2.1-r0: task do_fetch: Succeeded
+NOTE: Running task 344 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/ncurses/ncurses_6.1+20190803.bb:do_fetch)
+NOTE: recipe make-4.2.1-r0: task do_fetch: Succeeded
+NOTE: Running task 345 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-gnome/gtk-doc/gtk-doc_1.31.bb:do_fetch)
+NOTE: recipe ncurses-6.1+20190803-r0: task do_fetch: Started
+NOTE: recipe gtk-doc-native-1.31-r0: task do_fetch: Started
+NOTE: recipe gtk-doc-native-1.31-r0: task do_fetch: Succeeded
+NOTE: Running task 346 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/perl/libxml-parser-perl_2.44.bb:do_fetch)
+NOTE: recipe libxml-parser-perl-native-2.44-r0: task do_fetch: Started
+NOTE: recipe matchbox-wm-1.2.2-r0: task do_fetch: Succeeded
+NOTE: Running task 347 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.1.bb:do_fetch)
+NOTE: recipe opkg-utils-0.4.1-r0: task do_fetch: Started
+NOTE: recipe libxml-parser-perl-native-2.44-r0: task do_fetch: Succeeded
+NOTE: Running task 348 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/bash-completion/bash-completion_2.9.bb:do_fetch)
+NOTE: recipe bash-completion-2.9-r0: task do_fetch: Started
+NOTE: recipe libtool-2.4.6-r0: task do_fetch: Succeeded
+NOTE: Running task 349 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/librepo/librepo_1.10.5.bb:do_fetch)
+NOTE: recipe opkg-utils-0.4.1-r0: task do_fetch: Succeeded
+NOTE: Running task 350 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/libcomps/libcomps_git.bb:do_fetch)
+NOTE: recipe librepo-1.10.5-r0: task do_fetch: Started
+NOTE: recipe libcomps-0.1.11-r0: task do_fetch: Started
+NOTE: recipe zlib-1.2.11-r0: task do_fetch: Succeeded
+NOTE: Running task 351 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/libdnf/libdnf_0.28.1.bb:do_fetch)
+NOTE: recipe libdnf-0.28.1-r0: task do_fetch: Started
+NOTE: recipe bluez5-5.50-r0: task do_fetch: Succeeded
+NOTE: Running task 352 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/python/python3-iniparse_0.4.bb:do_fetch)
+NOTE: recipe python3-iniparse-0.4-r0: task do_fetch: Started
+NOTE: recipe liberation-fonts-1_2.00.1-r0: task do_fetch: Succeeded
+NOTE: Running task 353 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/xz/xz_5.2.4.bb:do_fetch)
+NOTE: recipe xz-5.2.4-r0: task do_fetch: Started
+NOTE: recipe python3-iniparse-0.4-r0: task do_fetch: Succeeded
+NOTE: Running task 354 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/bzip2/bzip2_1.0.8.bb:do_fetch)
+NOTE: recipe bzip2-1.0.8-r0: task do_fetch: Started
+NOTE: recipe bash-completion-2.9-r0: task do_fetch: Succeeded
+NOTE: Running task 355 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/libarchive/libarchive_3.4.0.bb:do_fetch)
+NOTE: recipe libarchive-3.4.0-r0: task do_fetch: Started
+NOTE: recipe alsa-utils-1.1.9-r0: task do_fetch: Succeeded
+NOTE: Running task 356 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/python/python3_3.7.6.bb:do_fetch)
+NOTE: recipe python3-3.7.6-r0: task do_fetch: Started
+NOTE: recipe alsa-lib-native-1.1.9-r0: task do_fetch: Succeeded
+NOTE: Running task 357 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/db/db_5.3.28.bb:do_fetch)
+NOTE: recipe db-1_5.3.28-r1: task do_fetch: Started
+NOTE: recipe l3afpad-0.8.18.1.11+gitAUTOINC+3cdccdc950-r0: task do_fetch: Succeeded
+NOTE: Running task 358 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/popt/popt_1.16.bb:do_fetch)
+NOTE: recipe popt-1.16-r3: task do_fetch: Started
+NOTE: recipe libarchive-3.4.0-r0: task do_fetch: Succeeded
+NOTE: Running task 359 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/elfutils/elfutils_0.177.bb:do_fetch)
+NOTE: recipe wpa-supplicant-2.9-r0: task do_fetch: Succeeded
+NOTE: Running task 360 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/file/file_5.37.bb:do_fetch)
+NOTE: recipe elfutils-0.177-r0: task do_fetch: Started
+NOTE: recipe file-5.37-r0: task do_fetch: Started
+NOTE: recipe ca-certificates-native-20190110-r0: task do_fetch: Succeeded
+NOTE: Running task 361 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/libtool/libtool-cross_2.4.6.bb:do_fetch)
+NOTE: recipe ca-certificates-20190110-r0: task do_fetch: Succeeded
+NOTE: Running task 362 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/initscripts/initscripts_1.0.bb:do_fetch)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_fetch: Started
+NOTE: recipe initscripts-1.0-r155: task do_fetch: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_fetch: Succeeded
+NOTE: Running task 363 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/update-rc.d/update-rc.d_0.8.bb:do_fetch)
+NOTE: recipe initscripts-1.0-r155: task do_fetch: Succeeded
+NOTE: Running task 364 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-gnome/gcr/gcr_3.28.1.bb:do_fetch)
+NOTE: recipe update-rc.d-0.8-r0: task do_fetch: Started
+NOTE: recipe gcr-3.28.1-r0: task do_fetch: Started
+NOTE: recipe rust-native-1.37.0-r0: task do_fetch: Succeeded
+NOTE: Running task 365 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-connectivity/avahi/avahi_0.7.bb:do_fetch)
+NOTE: recipe avahi-0.7-r0: task do_fetch: Started
+NOTE: recipe update-rc.d-0.8-r0: task do_fetch: Succeeded
+NOTE: Running task 366 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/iso-codes/iso-codes_4.3.bb:do_fetch)
+NOTE: recipe iso-codes-4.3-r0: task do_fetch: Started
+NOTE: recipe gcr-3.28.1-r0: task do_fetch: Succeeded
+NOTE: Running task 367 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/meson/meson_0.51.2.bb:do_fetch)
+NOTE: recipe meson-native-0.51.2-r0: task do_fetch: Started
+NOTE: recipe re2c-native-1.0.1-r0: task do_fetch: Succeeded
+NOTE: Running task 368 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-gnome/json-glib/json-glib_1.4.4.bb:do_fetch)
+NOTE: recipe json-glib-1.4.4-r0: task do_fetch: Started
+NOTE: recipe adwaita-icon-theme-3.32.0-r0: task do_fetch: Succeeded
+NOTE: Running task 369 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-sato/webkit/webkitgtk_2.24.4.bb:do_fetch)
+NOTE: recipe webkitgtk-2.24.4-r0: task do_fetch: Started
+NOTE: recipe bzip2-1.0.8-r0: task do_fetch: Succeeded
+NOTE: Running task 370 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-gnome/libdazzle/libdazzle_3.32.3.bb:do_fetch)
+NOTE: recipe libdazzle-3.32.3-r0: task do_fetch: Started
+NOTE: recipe json-glib-1.4.4-r0: task do_fetch: Succeeded
+NOTE: Running task 371 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-gnome/gsettings-desktop-schemas/gsettings-desktop-schemas_3.32.0.bb:do_fetch)
+NOTE: recipe gsettings-desktop-schemas-3.32.0-r0: task do_fetch: Started
+NOTE: recipe fontconfig-native-2.13.1-r0: task do_fetch: Succeeded
+NOTE: Running task 372 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libsoup/libsoup-2.4_2.66.4.bb:do_fetch)
+NOTE: recipe xz-5.2.4-r0: task do_fetch: Succeeded
+NOTE: Running task 373 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/zip/zip_3.0.bb:do_fetch)
+NOTE: recipe libsoup-2.4-2.66.4-r0: task do_fetch: Started
+NOTE: recipe zip-native-3.0-r2: task do_fetch: Started
+NOTE: recipe zip-native-3.0-r2: task do_fetch: Succeeded
+NOTE: Running task 374 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/unzip/unzip_6.0.bb:do_fetch)
+NOTE: recipe gawk-5.0.1-r0: task do_fetch: Succeeded
+NOTE: Running task 375 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta-rust/recipes-devtools/rust/rust-cross_1.37.0.bb:do_fetch)
+NOTE: recipe unzip-native-1_6.0-r5: task do_fetch: Started
+NOTE: recipe unzip-native-1_6.0-r5: task do_fetch: Succeeded
+NOTE: Running task 376 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta-browser/dynamic-layers/rust-layer/recipes-devtools/cbindgen/cbindgen_0.8.7.bb:do_fetch)
+NOTE: recipe rust-cross-x86_64-1.37.0-r0: task do_fetch: Started
+NOTE: recipe rust-cross-x86_64-1.37.0-r0: task do_fetch: Succeeded
+NOTE: Running task 377 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxt_1.2.0.bb:do_fetch)
+NOTE: recipe cbindgen-native-0.8.7-r0: task do_fetch: Started
+NOTE: recipe libxt-1_1.2.0-r0: task do_fetch: Started
+NOTE: recipe libidn-1.35-r0: task do_fetch: Succeeded
+NOTE: Running task 378 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta-rust/recipes-devtools/rust/libstd-rs_1.37.0.bb:do_fetch)
+NOTE: recipe libdazzle-3.32.3-r0: task do_fetch: Succeeded
+NOTE: Running task 379 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-gnome/libnotify/libnotify_0.7.8.bb:do_fetch)
+NOTE: recipe libstd-rs-1.37.0-r0: task do_fetch: Started
+NOTE: recipe libstd-rs-1.37.0-r0: task do_fetch: Succeeded
+NOTE: Running task 380 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta-rust/recipes-devtools/cargo/cargo_1.37.0.bb:do_fetch)
+NOTE: recipe libnotify-0.7.8-r0: task do_fetch: Started
+NOTE: recipe cargo-native-1.37.0-r0: task do_fetch: Started
+NOTE: recipe cargo-native-1.37.0-r0: task do_fetch: Succeeded
+NOTE: Running task 381 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta-openembedded/meta-oe/recipes-gnome/gtk+/gtk+_2.24.32.bb:do_fetch)
+NOTE: recipe gtk+-2.24.32-r0: task do_fetch: Started
+NOTE: recipe gsettings-desktop-schemas-3.32.0-r0: task do_fetch: Succeeded
+NOTE: Running task 382 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/dbus/dbus-glib_0.110.bb:do_fetch)
+NOTE: recipe dbus-glib-0.110-r0: task do_fetch: Started
+NOTE: recipe dbus-glib-0.110-r0: task do_fetch: Succeeded
+NOTE: Running task 383 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/curl/curl_7.66.0.bb:do_fetch)
+NOTE: recipe db-1_5.3.28-r1: task do_fetch: Succeeded
+NOTE: Running task 384 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/startup-notification/startup-notification_0.12.bb:do_fetch)
+NOTE: recipe curl-7.66.0-r0: task do_fetch: Started
+NOTE: recipe startup-notification-0.12-r2: task do_fetch: Started
+NOTE: recipe libnotify-0.7.8-r0: task do_fetch: Succeeded
+NOTE: Running task 385 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxext_1.3.4.bb:do_fetch)
+NOTE: recipe libxext-1_1.3.4-r0: task do_fetch: Started
+NOTE: recipe libxext-1_1.3.4-r0: task do_fetch: Succeeded
+NOTE: Running task 386 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/nspr/nspr_4.21.bb:do_fetch)
+NOTE: recipe nspr-4.21-r0: task do_fetch: Started
+NOTE: recipe avahi-0.7-r0: task do_fetch: Succeeded
+NOTE: Running task 387 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta-browser/recipes-browser/chromium/gn-native_79.0.3945.117.bb:do_fetch)
+NOTE: recipe gn-native-79.0.3945.117-r0: task do_fetch: Started
+NOTE: recipe nspr-4.21-r0: task do_fetch: Succeeded
+NOTE: Running task 388 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxscrnsaver_1.2.3.bb:do_fetch)
+NOTE: recipe libxscrnsaver-1_1.2.3-r0: task do_fetch: Started
+NOTE: recipe popt-1.16-r3: task do_fetch: Succeeded
+NOTE: Running task 389 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxfixes_5.0.3.bb:do_fetch)
+NOTE: recipe libxfixes-1_5.0.3-r0: task do_fetch: Started
+NOTE: recipe libxfixes-1_5.0.3-r0: task do_fetch: Succeeded
+NOTE: Running task 390 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/libxml/libxml2_2.9.9.bb:do_fetch)
+NOTE: recipe libxml2-2.9.9-r0: task do_fetch: Started
+NOTE: recipe groff-native-1.22.4-r0: task do_fetch: Succeeded
+NOTE: Running task 391 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta-openembedded/meta-oe/recipes-devtools/nodejs/nodejs_10.16.3.bb:do_fetch)
+NOTE: recipe nodejs-native-10.16.3-r0: task do_fetch: Started
+NOTE: recipe gstreamer1.0-plugins-bad-1.16.1-r0: task do_fetch: Succeeded
+NOTE: Running task 392 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/dbus/dbus_1.12.16.bb:do_fetch)
+NOTE: recipe dbus-1.12.16-r0: task do_fetch: Started
+NOTE: recipe libsoup-2.4-2.66.4-r0: task do_fetch: Succeeded
+NOTE: Running task 393 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-gnome/gtk+/gtk+3_3.24.8.bb:do_fetch)
+NOTE: recipe gtk+3-3.24.8-r0: task do_fetch: Started
+NOTE: recipe pixman-native-1_0.38.4-r0: task do_fetch: Succeeded
+NOTE: Running task 394 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/atk/atk_2.32.0.bb:do_fetch)
+NOTE: recipe atk-2.32.0-r0: task do_fetch: Started
+NOTE: recipe atk-2.32.0-r0: task do_fetch: Succeeded
+NOTE: Running noexec task 395 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta-clang/recipes-devtools/clang/clang-cross_git.bb:do_fetch)
+NOTE: Running task 396 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/atk/at-spi2-core_2.32.1.bb:do_fetch)
+NOTE: recipe at-spi2-core-2.32.1-r0: task do_fetch: Started
+NOTE: recipe at-spi2-core-2.32.1-r0: task do_fetch: Succeeded
+NOTE: Running task 397 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-gnome/hicolor-icon-theme/hicolor-icon-theme_0.17.bb:do_fetch)
+NOTE: recipe hicolor-icon-theme-0.17-r0: task do_fetch: Started
+NOTE: recipe xkeyboard-config-2.27-r0: task do_fetch: Succeeded
+NOTE: Running task 398 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/freetype/freetype_2.10.1.bb:do_fetch)
+NOTE: recipe freetype-2.10.1-r0: task do_fetch: Started
+NOTE: recipe freetype-2.10.1-r0: task do_fetch: Succeeded
+NOTE: Running task 399 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/flac/flac_1.3.3.bb:do_fetch)
+NOTE: recipe gtk+-2.24.32-r0: task do_fetch: Succeeded
+NOTE: Running task 400 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta-openembedded/meta-oe/recipes-devtools/yasm/yasm_git.bb:do_fetch)
+NOTE: recipe flac-1.3.3-r0: task do_fetch: Started
+NOTE: recipe yasm-native-1.3.0+gitAUTOINC+ba463d3c26-r0: task do_fetch: Started
+NOTE: recipe startup-notification-0.12-r2: task do_fetch: Succeeded
+NOTE: Running task 401 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxdamage_1.1.5.bb:do_fetch)
+NOTE: recipe libxdamage-1_1.1.5-r0: task do_fetch: Started
+NOTE: recipe libxdamage-1_1.1.5-r0: task do_fetch: Succeeded
+NOTE: Running task 402 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/jpeg/libjpeg-turbo_2.0.3.bb:do_fetch)
+NOTE: recipe nodejs-native-10.16.3-r0: task do_fetch: Succeeded
+NOTE: Running task 403 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/mesa/mesa_19.1.6.bb:do_fetch)
+NOTE: recipe libjpeg-turbo-1_2.0.3-r0: task do_fetch: Started
+NOTE: recipe libjpeg-turbo-1_2.0.3-r0: task do_fetch: Succeeded
+NOTE: Running task 404 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/expat/expat_2.2.8.bb:do_fetch)
+NOTE: recipe mesa-2_19.1.6-r0: task do_fetch: Started
+NOTE: recipe expat-2.2.8-r0: task do_fetch: Started
+NOTE: recipe libxscrnsaver-1_1.2.3-r0: task do_fetch: Succeeded
+NOTE: Running noexec task 405 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/gcc/libgcc_9.2.bb:do_fetch)
+NOTE: Running task 406 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libx11_1.6.8.bb:do_fetch)
+NOTE: recipe libx11-1_1.6.8-r0: task do_fetch: Started
+NOTE: recipe hicolor-icon-theme-0.17-r0: task do_fetch: Succeeded
+NOTE: Running task 407 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-gnome/gdk-pixbuf/gdk-pixbuf_2.38.2.bb:do_fetch)
+NOTE: recipe gdk-pixbuf-native-2.38.2-r0: task do_fetch: Started
+NOTE: recipe gdk-pixbuf-native-2.38.2-r0: task do_fetch: Succeeded
+NOTE: Running task 408 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-gnome/gtk+/gtk+3_3.24.8.bb:do_fetch)
+NOTE: recipe gtk+3-native-3.24.8-r0: task do_fetch: Started
+NOTE: recipe curl-7.66.0-r0: task do_fetch: Succeeded
+NOTE: Running task 409 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/sqlite/sqlite3_3.29.0.bb:do_fetch)
+NOTE: recipe sqlite3-3_3.29.0-r0: task do_fetch: Started
+NOTE: recipe libx11-native-1_1.6.8-r0: task do_fetch: Succeeded
+NOTE: Running task 410 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libxslt/libxslt_1.1.33.bb:do_fetch)
+NOTE: recipe libx11-1_1.6.8-r0: task do_fetch: Succeeded
+NOTE: Running task 411 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxrender_0.9.10.bb:do_fetch)
+NOTE: recipe libxslt-1.1.33-r0: task do_fetch: Started
+NOTE: recipe libxslt-1.1.33-r0: task do_fetch: Succeeded
+NOTE: Running task 412 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta-qt5/recipes-qt/qt5/qtmultimedia_git.bb:do_fetch)
+NOTE: recipe libxrender-1_0.9.10-r0: task do_fetch: Started
+NOTE: recipe libxrender-1_0.9.10-r0: task do_fetch: Succeeded
+NOTE: Running task 413 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/flex/flex_2.6.0.bb:do_fetch)
+NOTE: recipe qtmultimedia-5.13.2+gitAUTOINC+dce51b45e8-r0: task do_fetch: Started
+NOTE: recipe flex-native-2.6.0-r0: task do_fetch: Started
+NOTE: recipe flex-native-2.6.0-r0: task do_fetch: Succeeded
+NOTE: Running task 414 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/ruby/ruby_2.5.5.bb:do_fetch)
+NOTE: recipe ruby-native-2.5.5-r0: task do_fetch: Started
+NOTE: recipe meson-native-0.51.2-r0: task do_fetch: Succeeded
+NOTE: Running task 415 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta-qt5/recipes-qt/qt5/qtsensors_git.bb:do_fetch)
+NOTE: recipe qtsensors-5.13.2+gitAUTOINC+e032fe21b6-r0: task do_fetch: Started
+NOTE: recipe expat-2.2.8-r0: task do_fetch: Succeeded
+NOTE: Running task 416 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/glib-2.0/glib-2.0_2.60.7.bb:do_fetch)
+NOTE: recipe glib-2.0-1_2.60.7-r0: task do_fetch: Started
+NOTE: recipe gtk+3-3.24.8-r0: task do_fetch: Succeeded
+NOTE: recipe gtk+3-native-3.24.8-r0: task do_fetch: Succeeded
+NOTE: Running task 417 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta-qt5/recipes-qt/qt5/qtbase-native_git.bb:do_fetch)
+NOTE: Running task 418 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxcomposite_0.4.5.bb:do_fetch)
+NOTE: recipe qtbase-native-5.13.2+gitAUTOINC+a7a24784ee-r0: task do_fetch: Started
+NOTE: recipe libxcomposite-1_0.4.5-r0: task do_fetch: Started
+NOTE: recipe libxcomposite-1_0.4.5-r0: task do_fetch: Succeeded
+NOTE: Running task 419 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta-qt5/recipes-qt/qt5/qtquickcontrols2_git.bb:do_fetch)
+NOTE: recipe qtquickcontrols2-5.13.2+gitAUTOINC+c0fb745acd-r0: task do_fetch: Started
+NOTE: recipe libxt-1_1.2.0-r0: task do_fetch: Succeeded
+NOTE: Running task 420 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/webp/libwebp_1.0.3.bb:do_fetch)
+NOTE: recipe libwebp-1.0.3-r0: task do_fetch: Started
+NOTE: recipe glib-2.0-1_2.60.7-r0: task do_fetch: Succeeded
+NOTE: Running task 421 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/libpng/libpng_1.6.37.bb:do_fetch)
+NOTE: recipe libpng-native-1.6.37-r0: task do_fetch: Started
+NOTE: recipe coreutils-8.31-r0: task do_fetch: Succeeded
+NOTE: Running task 422 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/fontconfig/fontconfig_2.13.1.bb:do_fetch)
+NOTE: recipe fontconfig-2.13.1-r0: task do_fetch: Started
+NOTE: recipe fontconfig-2.13.1-r0: task do_fetch: Succeeded
+NOTE: Running task 423 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxcursor_1.2.0.bb:do_fetch)
+NOTE: recipe libxcursor-1_1.2.0-r0: task do_fetch: Started
+NOTE: recipe libxcursor-1_1.2.0-r0: task do_fetch: Succeeded
+NOTE: Running task 424 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/drm/libdrm_2.4.99.bb:do_fetch)
+NOTE: recipe libdrm-2.4.99-r0: task do_fetch: Started
+NOTE: recipe libwebp-1.0.3-r0: task do_fetch: Succeeded
+NOTE: Running task 425 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta-qt5/recipes-qt/qt5/qtdeclarative_git.bb:do_fetch)
+NOTE: recipe qtdeclarative-5.13.2+gitAUTOINC+4080025fed-r0: task do_fetch: Started
+NOTE: recipe gst-examples-1.16.0-r0: task do_fetch: Succeeded
+NOTE: Running task 426 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta-qt5/recipes-qt/qt5/qtxmlpatterns_git.bb:do_fetch)
+NOTE: recipe qtxmlpatterns-5.13.2+gitAUTOINC+74c5be960c-r0: task do_fetch: Started
+NOTE: recipe sudo-1.8.27-r0: task do_fetch: Succeeded
+NOTE: Running task 427 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/nspr/nspr_4.21.bb:do_fetch)
+NOTE: recipe nspr-native-4.21-r0: task do_fetch: Started
+NOTE: recipe nspr-native-4.21-r0: task do_fetch: Succeeded
+NOTE: Running task 428 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/pulseaudio/pulseaudio_12.2.bb:do_fetch)
+NOTE: recipe pulseaudio-12.2-r0: task do_fetch: Started
+NOTE: recipe gnupg-2.2.17-r0: task do_fetch: Succeeded
+NOTE: Running task 429 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libevent/libevent_2.1.11.bb:do_fetch)
+NOTE: recipe libevent-2.1.11-r0: task do_fetch: Started
+NOTE: recipe swig-native-3.0.12-r0: task do_fetch: Succeeded
+NOTE: Running task 430 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/python/python-native_2.7.17.bb:do_fetch)
+NOTE: recipe gstreamer1.0-1.16.1-r0: task do_fetch: Succeeded
+NOTE: Running task 431 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-bsp/pciutils/pciutils_3.6.2.bb:do_fetch)
+NOTE: recipe python-native-2.7.17-r0: task do_fetch: Started
+NOTE: recipe pciutils-3.6.2-r0: task do_fetch: Started
+NOTE: recipe pciutils-3.6.2-r0: task do_fetch: Succeeded
+NOTE: Running task 432 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta-qt5/recipes-qt/qt5/qtlocation_git.bb:do_fetch)
+NOTE: recipe qtlocation-5.13.2+gitAUTOINC+b8cc5f3ae5_4b85252fbe-r0: task do_fetch: Started
+NOTE: recipe gstreamer1.0-plugins-base-1.16.1-r0: task do_fetch: Succeeded
+NOTE: Running task 433 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta-qt5/recipes-qt/qt5/qtwebchannel_git.bb:do_fetch)
+NOTE: recipe qtwebchannel-5.13.2+gitAUTOINC+3be3e5756f-r0: task do_fetch: Started
+NOTE: recipe gstreamer1.0-plugins-good-1.16.1-r0: task do_fetch: Succeeded
+NOTE: Running task 434 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta-qt5/recipes-qt/qt5/qtquickcontrols_git.bb:do_fetch)
+NOTE: recipe qtquickcontrols-5.13.2+gitAUTOINC+9a5e84b8f9-r0: task do_fetch: Started
+NOTE: recipe dbus-test-1.12.16-r0: task do_fetch: Succeeded
+NOTE: Running task 435 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxi_1.7.10.bb:do_fetch)
+NOTE: recipe dbus-1.12.16-r0: task do_fetch: Succeeded
+NOTE: Running task 436 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/pixman_0.38.4.bb:do_fetch)
+NOTE: recipe libxi-1_1.7.10-r0: task do_fetch: Started
+NOTE: recipe pixman-1_0.38.4-r0: task do_fetch: Started
+NOTE: recipe libxi-1_1.7.10-r0: task do_fetch: Succeeded
+NOTE: Running task 437 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/icu/icu_64.2.bb:do_fetch)
+NOTE: recipe pixman-1_0.38.4-r0: task do_fetch: Succeeded
+NOTE: Running task 438 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/pango/pango_1.44.6.bb:do_fetch)
+NOTE: recipe icu-64.2-r0: task do_fetch: Started
+NOTE: recipe pango-1.44.6-r0: task do_fetch: Started
+NOTE: recipe pango-1.44.6-r0: task do_fetch: Succeeded
+NOTE: Running task 439 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/libpng/libpng_1.6.37.bb:do_fetch)
+NOTE: recipe libpng-native-1.6.37-r0: task do_fetch: Succeeded
+NOTE: recipe libpng-1.6.37-r0: task do_fetch: Started
+NOTE: Running task 440 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta-qt5/recipes-qt/qt5/qtbase_git.bb:do_fetch)
+NOTE: recipe libpng-1.6.37-r0: task do_fetch: Succeeded
+NOTE: Running task 441 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/nss/nss_3.45.bb:do_fetch)
+NOTE: recipe nss-3.45-r0: task do_fetch: Started
+NOTE: recipe qtbase-5.13.2+gitAUTOINC+a7a24784ee-r0: task do_fetch: Started
+NOTE: recipe flac-1.3.3-r0: task do_fetch: Succeeded
+NOTE: Running task 442 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/gperf/gperf_3.1.bb:do_fetch)
+NOTE: recipe gperf-native-3.1-r0: task do_fetch: Started
+NOTE: recipe libevent-2.1.11-r0: task do_fetch: Succeeded
+NOTE: Running task 443 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-multimedia/alsa/alsa-lib_1.1.9.bb:do_fetch)
+NOTE: recipe alsa-lib-1.1.9-r0: task do_fetch: Started
+NOTE: recipe alsa-lib-1.1.9-r0: task do_fetch: Succeeded
+NOTE: Running task 444 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/cairo/cairo_1.16.0.bb:do_fetch)
+NOTE: recipe cairo-1.16.0-r0: task do_fetch: Started
+NOTE: recipe busybox-1.31.0-r0: task do_fetch: Succeeded
+NOTE: Running task 445 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/nasm/nasm_2.14.02.bb:do_fetch)
+NOTE: recipe nasm-native-2.14.02-r0: task do_fetch: Started
+NOTE: recipe sqlite3-3_3.29.0-r0: task do_fetch: Succeeded
+NOTE: Running task 446 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxtst_1.2.3.bb:do_fetch)
+NOTE: recipe libxtst-1_1.2.3-r0: task do_fetch: Started
+NOTE: recipe libxtst-1_1.2.3-r0: task do_fetch: Succeeded
+NOTE: Running task 447 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/gettext/gettext_0.19.8.1.bb:do_fetch)
+NOTE: recipe eudev-3.2.8-r0: task do_fetch: Succeeded
+NOTE: Running task 448 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/libcap/libcap_2.27.bb:do_fetch)
+NOTE: recipe gettext-native-0.19.8.1-r0: task do_fetch: Started
+NOTE: recipe libcap-2.27-r0: task do_fetch: Started
+NOTE: recipe libcap-2.27-r0: task do_fetch: Succeeded
+NOTE: Running task 449 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-connectivity/openssl/openssl_1.1.1d.bb:do_fetch)
+NOTE: recipe openssl-1.1.1d-r0: task do_fetch: Started
+NOTE: recipe dtc-native-1.5.1-r0: task do_fetch: Succeeded
+NOTE: Running task 450 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-graphics/xorg-lib/libxrandr_1.5.2.bb:do_fetch)
+NOTE: recipe libxrandr-1_1.5.2-r0: task do_fetch: Started
+NOTE: recipe libxrandr-1_1.5.2-r0: task do_fetch: Succeeded
+NOTE: Running task 451 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_fetch)
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_fetch: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_fetch: Succeeded
+NOTE: Running noexec task 452 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/gcc/gcc-runtime_9.2.bb:do_fetch)
+NOTE: Running task 453 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/glibc/glibc_2.30.bb:do_fetch)
+NOTE: recipe glibc-2.30-r0: task do_fetch: Started
+NOTE: recipe openssl-1.1.1d-r0: task do_fetch: Succeeded
+NOTE: Running task 454 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/binutils/binutils_2.32.bb:do_fetch)
+NOTE: recipe binutils-native-2.32.0-r0: task do_fetch: Started
+NOTE: recipe qtwebchannel-5.13.2+gitAUTOINC+3be3e5756f-r0: task do_fetch: Succeeded
+NOTE: Running task 455 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/chrpath/chrpath_0.16.bb:do_fetch)
+NOTE: recipe chrpath-native-0.16-r0: task do_fetch: Started
+NOTE: recipe libdrm-2.4.99-r0: task do_fetch: Succeeded
+NOTE: Running task 456 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/libsolv/libsolv_0.7.6.bb:do_fetch)
+NOTE: recipe libsolv-native-0.7.6-r0: task do_fetch: Started
+NOTE: recipe chrpath-native-0.16-r0: task do_fetch: Succeeded
+NOTE: Running task 457 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/libxml/libxml2_2.9.9.bb:do_fetch)
+NOTE: recipe libxml2-native-2.9.9-r0: task do_fetch: Started
+NOTE: recipe gperf-native-3.1-r0: task do_fetch: Succeeded
+NOTE: Running task 458 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/curl/curl_7.66.0.bb:do_fetch)
+NOTE: recipe curl-native-7.66.0-r0: task do_fetch: Started
+NOTE: recipe curl-native-7.66.0-r0: task do_fetch: Succeeded
+NOTE: Running task 459 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/expat/expat_2.2.8.bb:do_fetch)
+NOTE: recipe nasm-native-2.14.02-r0: task do_fetch: Succeeded
+NOTE: Running task 460 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/glib-2.0/glib-2.0_2.60.7.bb:do_fetch)
+NOTE: recipe expat-native-2.2.8-r0: task do_fetch: Started
+NOTE: recipe expat-native-2.2.8-r0: task do_fetch: Succeeded
+NOTE: Running task 461 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/zlib/zlib_1.2.11.bb:do_fetch)
+NOTE: recipe libxml2-native-2.9.9-r0: task do_fetch: Succeeded
+NOTE: Running task 462 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/libmodulemd/libmodulemd_git.bb:do_fetch)
+NOTE: recipe libxml2-2.9.9-r0: task do_fetch: Succeeded
+NOTE: Running task 463 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/libdnf/libdnf_0.28.1.bb:do_fetch)
+NOTE: recipe glib-2.0-native-1_2.60.7-r0: task do_fetch: Started
+NOTE: recipe zlib-native-1.2.11-r0: task do_fetch: Started
+NOTE: recipe glib-2.0-native-1_2.60.7-r0: task do_fetch: Succeeded
+NOTE: Running task 464 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/python/python3-iniparse_0.4.bb:do_fetch)
+NOTE: recipe zlib-native-1.2.11-r0: task do_fetch: Succeeded
+NOTE: Running task 465 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/cmake/cmake-native_3.15.3.bb:do_fetch)
+NOTE: recipe libmodulemd-native-2.6.0-r0: task do_fetch: Started
+NOTE: recipe libdnf-native-0.28.1-r0: task do_fetch: Started
+NOTE: recipe cmake-native-3.15.3-r0: task do_fetch: Started
+NOTE: recipe python3-iniparse-native-0.4-r0: task do_fetch: Started
+NOTE: recipe python3-iniparse-native-0.4-r0: task do_fetch: Succeeded
+NOTE: Running task 466 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/libcomps/libcomps_git.bb:do_fetch)
+NOTE: recipe libcomps-native-0.1.11-r0: task do_fetch: Started
+NOTE: recipe p11-kit-0.23.16.1-r0: task do_fetch: Succeeded
+NOTE: Running task 467 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/ninja/ninja_1.9.0.bb:do_fetch)
+NOTE: recipe harfbuzz-native-2.6.1-r0: task do_fetch: Succeeded
+NOTE: Running task 468 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/librepo/librepo_1.10.5.bb:do_fetch)
+NOTE: recipe harfbuzz-2.6.1-r0: task do_fetch: Succeeded
+NOTE: Running task 469 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/automake/automake_1.16.1.bb:do_fetch)
+NOTE: recipe ninja-native-1.9.0-r0: task do_fetch: Started
+NOTE: recipe librepo-native-1.10.5-r0: task do_fetch: Started
+NOTE: recipe automake-native-1.16.1-r0: task do_fetch: Started
+NOTE: recipe pulseaudio-12.2-r0: task do_fetch: Succeeded
+NOTE: Running task 470 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/popt/popt_1.16.bb:do_fetch)
+NOTE: recipe popt-native-1.16-r3: task do_fetch: Started
+NOTE: recipe popt-native-1.16-r3: task do_fetch: Succeeded
+NOTE: Running task 471 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_fetch)
+NOTE: recipe gnu-config-native-20190501+gitAUTOINC+b98424c249-r0: task do_fetch: Started
+NOTE: recipe xserver-xorg-2_1.20.5-r0: task do_fetch: Succeeded
+NOTE: Running task 472 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/bzip2/bzip2_1.0.8.bb:do_fetch)
+NOTE: recipe bzip2-native-1.0.8-r0: task do_fetch: Started
+NOTE: recipe bzip2-native-1.0.8-r0: task do_fetch: Succeeded
+NOTE: Running task 473 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/db/db_5.3.28.bb:do_fetch)
+NOTE: recipe db-native-1_5.3.28-r1: task do_fetch: Started
+NOTE: recipe db-native-1_5.3.28-r1: task do_fetch: Succeeded
+NOTE: Running task 474 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/autoconf/autoconf_2.69.bb:do_fetch)
+NOTE: recipe autoconf-native-2.69-r11: task do_fetch: Started
+NOTE: recipe perl-5.30.0-r0: task do_fetch: Succeeded
+NOTE: Running task 475 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/nss/nss_3.45.bb:do_fetch)
+NOTE: recipe nss-native-3.45-r0: task do_fetch: Started
+NOTE: recipe cbindgen-native-0.8.7-r0: task do_fetch: Succeeded
+NOTE: Running task 476 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/libtool/libtool-native_2.4.6.bb:do_fetch)
+NOTE: recipe libtool-native-2.4.6-r0: task do_fetch: Started
+NOTE: recipe libtool-native-2.4.6-r0: task do_fetch: Succeeded
+NOTE: Running task 477 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/gettext/gettext-minimal-native_0.19.8.1.bb:do_fetch)
+NOTE: recipe gettext-minimal-native-0.19.8.1-r0: task do_fetch: Started
+NOTE: recipe gettext-minimal-native-0.19.8.1-r0: task do_fetch: Succeeded
+NOTE: Running task 478 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/file/file_5.37.bb:do_fetch)
+NOTE: recipe file-native-5.37-r0: task do_fetch: Started
+NOTE: recipe qtsensors-5.13.2+gitAUTOINC+e032fe21b6-r0: task do_fetch: Succeeded
+NOTE: Running task 479 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/dbus/dbus_1.12.16.bb:do_fetch)
+NOTE: recipe dbus-native-1.12.16-r0: task do_fetch: Started
+NOTE: recipe dbus-native-1.12.16-r0: task do_fetch: Succeeded
+NOTE: Running task 480 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/libarchive/libarchive_3.4.0.bb:do_fetch)
+NOTE: recipe libarchive-native-3.4.0-r0: task do_fetch: Started
+NOTE: recipe libarchive-native-3.4.0-r0: task do_fetch: Succeeded
+NOTE: Running task 481 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-connectivity/openssl/openssl_1.1.1d.bb:do_fetch)
+NOTE: recipe openssl-native-1.1.1d-r0: task do_fetch: Started
+NOTE: recipe openssl-native-1.1.1d-r0: task do_fetch: Succeeded
+NOTE: Running task 482 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/lzop/lzop_1.04.bb:do_fetch)
+NOTE: recipe lzop-native-1.04-r0: task do_fetch: Started
+NOTE: recipe nss-native-3.45-r0: task do_fetch: Succeeded
+NOTE: Running task 483 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/util-linux/util-linux_2.34.bb:do_fetch)
+NOTE: recipe nss-3.45-r0: task do_fetch: Succeeded
+NOTE: Running task 484 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/elfutils/elfutils_0.177.bb:do_fetch)
+NOTE: recipe libsdl2-native-2.0.10-r0: task do_fetch: Succeeded
+NOTE: Running task 485 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/bison/bison_3.4.1.bb:do_fetch)
+NOTE: recipe util-linux-native-2.34-r0: task do_fetch: Started
+NOTE: recipe elfutils-native-0.177-r0: task do_fetch: Started
+NOTE: recipe util-linux-native-2.34-r0: task do_fetch: Succeeded
+NOTE: Running task 486 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/bc/bc_1.07.1.bb:do_fetch)
+NOTE: recipe bison-native-3.4.1-r0: task do_fetch: Started
+NOTE: recipe bison-native-3.4.1-r0: task do_fetch: Succeeded
+NOTE: Running noexec task 487 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/gcc/gcc-cross_9.2.bb:do_fetch)
+NOTE: Running task 488 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-kernel/kern-tools/kern-tools-native_git.bb:do_fetch)
+NOTE: recipe kern-tools-native-0.2+gitAUTOINC+bb6df0ef23-r12: task do_fetch: Started
+NOTE: recipe bc-native-1.07.1-r0: task do_fetch: Started
+NOTE: recipe bc-native-1.07.1-r0: task do_fetch: Succeeded
+NOTE: Running task 489 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/ncurses/ncurses_6.1+20190803.bb:do_fetch)
+NOTE: recipe ncurses-native-6.1+20190803-r0: task do_fetch: Started
+NOTE: recipe lzop-native-1.04-r0: task do_fetch: Succeeded
+NOTE: Running task 490 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-kernel/kmod/kmod-native_git.bb:do_fetch)
+NOTE: recipe libcomps-0.1.11-r0: task do_fetch: Succeeded
+NOTE: Running task 491 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/dwarfsrcfiles/dwarfsrcfiles.bb:do_fetch)
+NOTE: recipe libcomps-native-0.1.11-r0: task do_fetch: Succeeded
+NOTE: Running task 492 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/binutils/binutils-cross_2.32.bb:do_fetch)
+NOTE: recipe kmod-native-26-r0: task do_fetch: Started
+NOTE: recipe binutils-cross-x86_64-2.32.0-r0: task do_fetch: Started
+NOTE: recipe dwarfsrcfiles-native-1.0-r0: task do_fetch: Started
+NOTE: recipe dwarfsrcfiles-native-1.0-r0: task do_fetch: Succeeded
+NOTE: Running task 493 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/sqlite/sqlite3_3.29.0.bb:do_fetch)
+NOTE: recipe sqlite3-native-3_3.29.0-r0: task do_fetch: Started
+NOTE: recipe sqlite3-native-3_3.29.0-r0: task do_fetch: Succeeded
+NOTE: Running task 494 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/pkgconfig/pkgconfig_git.bb:do_fetch)
+NOTE: recipe pkgconfig-native-0.29.2+gitAUTOINC+edf8e6f0ea-r0: task do_fetch: Started
+NOTE: recipe python3-3.7.6-r0: task do_fetch: Succeeded
+NOTE: Running task 495 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-support/attr/attr_2.4.47.bb:do_fetch)
+NOTE: recipe attr-native-2.4.47-r0: task do_fetch: Started
+NOTE: recipe attr-native-2.4.47-r0: task do_fetch: Succeeded
+NOTE: Running task 496 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/qemu/qemu-system-native_4.1.0.bb:do_fetch)
+NOTE: recipe qemu-system-native-4.1.0-r0: task do_fetch: Started
+NOTE: recipe bash-5.0-r0: task do_fetch: Succeeded
+NOTE: Running task 497 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/python/python3_3.7.6.bb:do_fetch)
+NOTE: recipe python3-native-3.7.6-r0: task do_fetch: Started
+NOTE: recipe python3-native-3.7.6-r0: task do_fetch: Succeeded
+NOTE: Running task 498 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/perl/perl_5.30.0.bb:do_fetch)
+NOTE: recipe perl-native-5.30.0-r0: task do_fetch: Started
+NOTE: recipe perl-native-5.30.0-r0: task do_fetch: Succeeded
+NOTE: Running task 499 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/psplash/psplash_git.bb:do_fetch)
+NOTE: recipe psplash-0.1+gitAUTOINC+2015f7073e-r15: task do_fetch: Started
+NOTE: recipe elfutils-native-0.177-r0: task do_fetch: Succeeded
+NOTE: Running task 500 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/dnf/dnf_4.2.2.bb:do_fetch)
+NOTE: recipe elfutils-0.177-r0: task do_fetch: Succeeded
+NOTE: Running task 501 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/rpm/rpm_4.14.2.1.bb:do_fetch)
+NOTE: recipe rpm-1_4.14.2.1-r0: task do_fetch: Started
+NOTE: recipe dnf-4.2.2-r0: task do_fetch: Started
+NOTE: recipe python-native-2.7.17-r0: task do_fetch: Succeeded
+NOTE: Running task 502 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/run-postinsts/run-postinsts_1.0.bb:do_fetch)
+NOTE: recipe run-postinsts-1.0-r10: task do_fetch: Started
+NOTE: recipe run-postinsts-1.0-r10: task do_fetch: Succeeded
+NOTE: Running task 503 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-gnome/epiphany/epiphany_3.32.4.bb:do_fetch)
+NOTE: recipe epiphany-3.32.4-r0: task do_fetch: Started
+NOTE: recipe ruby-native-2.5.5-r0: task do_fetch: Succeeded
+NOTE: Running task 504 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta-browser/dynamic-layers/rust-layer/recipes-browser/firefox/firefox_68.0esr.bb:do_fetch)
+NOTE: recipe firefox-68.0esr-r0: task do_fetch: Started
+NOTE: recipe epiphany-3.32.4-r0: task do_fetch: Succeeded
+NOTE: Running task 505 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta-browser/recipes-browser/chromium/chromium-x11_79.0.3945.117.bb:do_fetch)
+NOTE: recipe chromium-x11-79.0.3945.117-r0: task do_fetch: Started
+NOTE: recipe kern-tools-native-0.2+gitAUTOINC+bb6df0ef23-r12: task do_fetch: Succeeded
+NOTE: Running task 506 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta-qt5/recipes-qt/qt5/qtwebkit_git.bb:do_fetch)
+NOTE: recipe qtwebkit-5.13.2+gitAUTOINC+ab1bd15209-r0: task do_fetch: Started
+NOTE: recipe docbook-xsl-stylesheets-native-1.79.1-r0: task do_fetch: Succeeded
+NOTE: Running task 507 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta-qt5/recipes-qt/qt5/qtwebengine_git.bb:do_fetch)
+NOTE: recipe qtwebengine-5.13.2+gitAUTOINC+556576b55f_843d70ac87-r0: task do_fetch: Started
+NOTE: recipe psplash-0.1+gitAUTOINC+2015f7073e-r15: task do_fetch: Succeeded
+NOTE: Running task 508 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_fetch)
+NOTE: recipe depmodwrapper-cross-1.0-r0: task do_fetch: Started
+NOTE: recipe depmodwrapper-cross-1.0-r0: task do_fetch: Succeeded
+NOTE: Running task 509 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/e2fsprogs/e2fsprogs_1.45.3.bb:do_fetch)
+NOTE: recipe e2fsprogs-native-1.45.3-r0: task do_fetch: Started
+NOTE: recipe autoconf-native-2.69-r11: task do_fetch: Succeeded
+NOTE: Running task 510 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/qemu/qemu-helper-native_1.0.bb:do_fetch)
+NOTE: recipe qemu-helper-native-1.0-r1: task do_fetch: Started
+NOTE: recipe qemu-helper-native-1.0-r1: task do_fetch: Succeeded
+NOTE: Running task 511 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/qemu/qemu-native_4.1.0.bb:do_fetch)
+NOTE: recipe qemu-native-4.1.0-r0: task do_fetch: Started
+NOTE: recipe libmodulemd-2.6.0-r0: task do_fetch: Succeeded
+NOTE: Running task 512 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/pigz/pigz_2.4.bb:do_fetch)
+NOTE: recipe libmodulemd-native-2.6.0-r0: task do_fetch: Succeeded
+NOTE: Running task 513 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/pbzip2/pbzip2_1.1.13.bb:do_fetch)
+NOTE: recipe pbzip2-native-1.1.13-r0: task do_fetch: Started
+NOTE: recipe pigz-native-2.4-r0: task do_fetch: Started
+NOTE: recipe libpsl-0.21.0-r0: task do_fetch: Succeeded
+NOTE: Running task 514 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/update-rc.d/update-rc.d_0.8.bb:do_fetch)
+NOTE: recipe update-rc.d-native-0.8-r0: task do_fetch: Started
+NOTE: recipe update-rc.d-native-0.8-r0: task do_fetch: Succeeded
+NOTE: Running task 515 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.1.bb:do_fetch)
+NOTE: recipe pbzip2-native-1.1.13-r0: task do_fetch: Succeeded
+NOTE: Running task 516 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/glibc/ldconfig-native_2.12.1.bb:do_fetch)
+NOTE: recipe ldconfig-native-2.12.1-r2: task do_fetch: Started
+NOTE: recipe ldconfig-native-2.12.1-r2: task do_fetch: Succeeded
+NOTE: Running task 517 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/makedevs/makedevs_1.0.1.bb:do_fetch)
+NOTE: recipe opkg-utils-native-0.4.1-r0: task do_fetch: Started
+NOTE: recipe opkg-utils-native-0.4.1-r0: task do_fetch: Succeeded
+NOTE: Running task 518 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/prelink/prelink_git.bb:do_fetch)
+NOTE: recipe makedevs-native-1.0.1-r0: task do_fetch: Started
+NOTE: recipe makedevs-native-1.0.1-r0: task do_fetch: Succeeded
+NOTE: Running task 519 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/mklibs/mklibs-native_0.1.44.bb:do_fetch)
+NOTE: recipe prelink-native-1.0+gitAUTOINC+a853a5d715-r0: task do_fetch: Started
+NOTE: recipe mklibs-native-0.1.44-r0: task do_fetch: Started
+NOTE: recipe pigz-native-2.4-r0: task do_fetch: Succeeded
+NOTE: Running task 520 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/qemu/qemuwrapper-cross_1.0.bb:do_fetch)
+NOTE: recipe qemuwrapper-cross-1.0-r0: task do_fetch: Started
+NOTE: recipe qemuwrapper-cross-1.0-r0: task do_fetch: Succeeded
+NOTE: Running task 521 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-core/glibc/cross-localedef-native_2.30.bb:do_fetch)
+NOTE: recipe cross-localedef-native-2.30-r0: task do_fetch: Started
+NOTE: recipe automake-native-1.16.1-r0: task do_fetch: Succeeded
+NOTE: Running task 522 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/xz/xz_5.2.4.bb:do_fetch)
+NOTE: recipe xz-native-5.2.4-r0: task do_fetch: Started
+NOTE: recipe xz-native-5.2.4-r0: task do_fetch: Succeeded
+NOTE: Running task 523 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/opkg/opkg_0.4.1.bb:do_fetch)
+NOTE: recipe opkg-native-1_0.4.1-r0: task do_fetch: Started
+NOTE: recipe mklibs-native-0.1.44-r0: task do_fetch: Succeeded
+NOTE: Running task 524 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/createrepo-c/createrepo-c_0.15.0.bb:do_fetch)
+NOTE: recipe createrepo-c-native-0.15.0-r0: task do_fetch: Started
+NOTE: recipe libxcrypt-4.4.8-r0: task do_fetch: Succeeded
+NOTE: Running task 525 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/dnf/dnf_4.2.2.bb:do_fetch)
+NOTE: recipe dnf-native-4.2.2-r0: task do_fetch: Started
+NOTE: recipe webkitgtk-2.24.4-r0: task do_fetch: Succeeded
+NOTE: Running task 526 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/rpm/rpm_4.14.2.1.bb:do_fetch)
+NOTE: recipe rpm-native-1_4.14.2.1-r0: task do_fetch: Started
+NOTE: recipe kmod-26-r0: task do_fetch: Succeeded
+NOTE: Running task 527 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-kernel/linux/linux-yocto_5.2.bb:do_fetch)
+NOTE: recipe kmod-native-26-r0: task do_fetch: Succeeded
+NOTE: Running task 528 of 530 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/pseudo/pseudo_git.bb:do_fetch)
+NOTE: recipe qtxmlpatterns-5.13.2+gitAUTOINC+74c5be960c-r0: task do_fetch: Succeeded
+NOTE: Running task 529 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/quilt/quilt-native_0.66.bb:do_fetch)
+NOTE: recipe pseudo-native-1.9.0+gitAUTOINC+060058bb29-r0: task do_fetch: Started
+NOTE: recipe quilt-native-0.66-r0: task do_fetch: Started
+NOTE: recipe linux-yocto-5.2.28+gitAUTOINC+dd6019025c_992280855e-r0: task do_fetch: Started
+NOTE: recipe gnu-config-native-20190501+gitAUTOINC+b98424c249-r0: task do_fetch: Succeeded
+NOTE: Running noexec task 530 of 530 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-sato/images/core-image-sato.bb:do_fetch)
+NOTE: recipe quilt-native-0.66-r0: task do_fetch: Succeeded
+NOTE: recipe cmake-native-3.15.3-r0: task do_fetch: Succeeded
+NOTE: recipe opkg-native-1_0.4.1-r0: task do_fetch: Succeeded
+NOTE: recipe pkgconfig-native-0.29.2+gitAUTOINC+edf8e6f0ea-r0: task do_fetch: Succeeded
+NOTE: recipe firefox-68.0esr-r0: task do_fetch: Succeeded
+NOTE: recipe pseudo-native-1.9.0+gitAUTOINC+060058bb29-r0: task do_fetch: Succeeded
+NOTE: recipe btrfs-tools-5.2.2-r0: task do_fetch: Succeeded
+NOTE: recipe qtquickcontrols2-5.13.2+gitAUTOINC+c0fb745acd-r0: task do_fetch: Succeeded
+NOTE: recipe qtquickcontrols-5.13.2+gitAUTOINC+9a5e84b8f9-r0: task do_fetch: Succeeded
+NOTE: recipe cantarell-fonts-0.0.25-r0: task do_fetch: Succeeded
+NOTE: recipe prelink-native-1.0+gitAUTOINC+a853a5d715-r0: task do_fetch: Succeeded
+NOTE: recipe gn-native-79.0.3945.117-r0: task do_fetch: Succeeded
+NOTE: recipe chromium-x11-79.0.3945.117-r0: task do_fetch: Succeeded
+NOTE: recipe vulkan-headers-1.1.108-r0: task do_fetch: Succeeded
+NOTE: recipe mesa-2_19.1.6-r0: task do_fetch: Succeeded
+NOTE: recipe qtmultimedia-5.13.2+gitAUTOINC+dce51b45e8-r0: task do_fetch: Succeeded
+NOTE: recipe gettext-native-0.19.8.1-r0: task do_fetch: Succeeded
+NOTE: recipe librepo-1.10.5-r0: task do_fetch: Succeeded
+NOTE: recipe librepo-native-1.10.5-r0: task do_fetch: Succeeded
+NOTE: recipe distcc-3.3.3-r0: task do_fetch: Succeeded
+NOTE: recipe ninja-native-1.9.0-r0: task do_fetch: Succeeded
+NOTE: recipe icu-native-64.2-r0: task do_fetch: Succeeded
+NOTE: recipe icu-64.2-r0: task do_fetch: Succeeded
+NOTE: recipe linux-libc-headers-5.2-r0: task do_fetch: Succeeded
+NOTE: recipe createrepo-c-native-0.15.0-r0: task do_fetch: Succeeded
+NOTE: recipe cairo-native-1.16.0-r0: task do_fetch: Succeeded
+NOTE: recipe cairo-1.16.0-r0: task do_fetch: Succeeded
+NOTE: recipe qemu-system-native-4.1.0-r0: task do_fetch: Succeeded
+NOTE: recipe qemu-native-4.1.0-r0: task do_fetch: Succeeded
+NOTE: recipe puzzles-2_0.0+gitAUTOINC+c6e0161dd4-r0: task do_fetch: Succeeded
+NOTE: recipe file-5.37-r0: task do_fetch: Succeeded
+NOTE: recipe file-native-5.37-r0: task do_fetch: Succeeded
+NOTE: recipe yasm-native-1.3.0+gitAUTOINC+ba463d3c26-r0: task do_fetch: Succeeded
+NOTE: recipe e2fsprogs-1.45.3-r0: task do_fetch: Succeeded
+NOTE: recipe e2fsprogs-native-1.45.3-r0: task do_fetch: Succeeded
+NOTE: recipe libdnf-0.28.1-r0: task do_fetch: Succeeded
+NOTE: recipe libdnf-native-0.28.1-r0: task do_fetch: Succeeded
+NOTE: recipe gcc-source-9.2.0-9.2.0-r0: task do_fetch: Succeeded
+NOTE: recipe libsolv-0.7.6-r0: task do_fetch: Succeeded
+NOTE: recipe libsolv-native-0.7.6-r0: task do_fetch: Succeeded
+NOTE: recipe ncurses-6.1+20190803-r0: task do_fetch: Succeeded
+NOTE: recipe ncurses-native-6.1+20190803-r0: task do_fetch: Succeeded
+NOTE: recipe qtdeclarative-native-5.13.2+gitAUTOINC+4080025fed-r0: task do_fetch: Succeeded
+NOTE: recipe qtdeclarative-5.13.2+gitAUTOINC+4080025fed-r0: task do_fetch: Succeeded
+NOTE: recipe vulkan-loader-1.1.108-r0: task do_fetch: Succeeded
+NOTE: recipe qtwebkit-5.13.2+gitAUTOINC+ab1bd15209-r0: task do_fetch: Succeeded
+NOTE: recipe libgit2-native-0.28.3-r0: task do_fetch: Succeeded
+NOTE: recipe qtlocation-5.13.2+gitAUTOINC+b8cc5f3ae5_4b85252fbe-r0: task do_fetch: Succeeded
+NOTE: recipe qtbase-native-5.13.2+gitAUTOINC+a7a24784ee-r0: task do_fetch: Succeeded
+NOTE: recipe qtbase-5.13.2+gitAUTOINC+a7a24784ee-r0: task do_fetch: Succeeded
+NOTE: recipe iso-codes-4.3-r0: task do_fetch: Succeeded
+NOTE: recipe dnf-4.2.2-r0: task do_fetch: Succeeded
+NOTE: recipe dnf-native-4.2.2-r0: task do_fetch: Succeeded
+NOTE: recipe rpm-1_4.14.2.1-r0: task do_fetch: Succeeded
+NOTE: recipe rpm-native-1_4.14.2.1-r0: task do_fetch: Succeeded
+NOTE: recipe llvm-project-source-9.0.1-9.0.1-r0: task do_fetch: Succeeded
+NOTE: recipe glibc-2.30-r0: task do_fetch: Succeeded
+NOTE: recipe cross-localedef-native-2.30-r0: task do_fetch: Succeeded
+NOTE: recipe qtwebengine-5.13.2+gitAUTOINC+556576b55f_843d70ac87-r0: task do_fetch: Succeeded
+NOTE: recipe binutils-2.32.0-r0: task do_fetch: Succeeded
+NOTE: recipe binutils-native-2.32.0-r0: task do_fetch: Succeeded
+NOTE: recipe binutils-cross-x86_64-2.32.0-r0: task do_fetch: Succeeded
+Bitbake still alive (5000s)
+NOTE: recipe linux-yocto-5.2.28+gitAUTOINC+dd6019025c_992280855e-r0: task do_fetch: Succeeded
+NOTE: Tasks Summary: Attempted 530 tasks of which 0 didn't need to be rerun and all succeeded.
+
+Summary: There were 4 WARNING messages shown.
+21.54user 2.82system 1:54:12elapsed 0%CPU (0avgtext+0avgdata 29152maxresident)k
+0inputs+760outputs (0major+31136minor)pagefaults 0swaps

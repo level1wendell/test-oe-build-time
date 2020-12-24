@@ -1,0 +1,171 @@
+
+### Shell environment set up for builds. ###
+
+You can now run 'bitbake <target>'
+
+Common targets are:
+    core-image-minimal
+    core-image-sato
+    meta-toolchain
+    meta-ide-support
+
+You can also run generated qemu images with a command like 'runqemu qemux86'
+
+Other commonly useful commands are:
+ - 'devtool' and 'recipetool' handle common recipe tasks
+ - 'bitbake-layers' handles common layer tasks
+ - 'oe-pkgdata-util' handles common target package tasks
+WARNING: Host distribution "debian-3" has not been validated with this version of the build system; you may possibly experience unexpected failures. It is recommended that you use a tested distribution.
+Parsing recipes...done.
+Parsing of 1698 .bb files complete (0 cached, 1698 parsed). 2448 targets, 68 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.44.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "debian-3"
+TARGET_SYS           = "x86_64-poky-linux"
+MACHINE              = "qemux86-64"
+DISTRO               = "poky"
+DISTRO_VERSION       = "3.0.2"
+TUNE_FEATURES        = "m64 core2"
+TARGET_FPU           = ""
+meta                 
+meta-poky            
+meta-yocto-bsp       = "zeus:73fe0e273b4e00dcb08122c4f54fc65316e2a793"
+meta-browser         = "zeus:1697014a05967ed54b294f3c4b5621df494d6551"
+meta-rust            = "zeus:5d1ada0c97723e1526bf5599b2fa2cbb56c2c0dc"
+meta-oe              = "zeus:e855ecc6d35677e79780adc57b2552213c995731"
+meta-clang           = "zeus:0c393398a91713a108f319ac75337c02b7ebeaa7"
+meta-qt5             = "zeus:a582fd4c810529e9af0c81700407b1955d1391d2"
+
+NOTE: Fetching uninative binary shim from http://downloads.yoctoproject.org/releases/uninative/2.7/x86_64-nativesdk-libc.tar.xz;sha256sum=9498d8bba047499999a7310ac2576d0796461184965351a56f6d32c888a1f216
+Initialising tasks...done.
+Sstate summary: Wanted 8 Found 0 Missed 8 Current 0 (0% match, 0% complete)
+NOTE: Executing Tasks
+NOTE: Setscene tasks completed
+NOTE: Running task 1 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/quilt/quilt-native_0.66.bb:do_fetch)
+NOTE: Running task 2 of 42 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_fetch)
+NOTE: Running task 3 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_fetch)
+NOTE: Running task 4 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/m4/m4-native_1.4.18.bb:do_fetch)
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_fetch: Started
+NOTE: recipe quilt-native-0.66-r0: task do_fetch: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_fetch: Succeeded
+NOTE: Running task 5 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 6 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_unpack)
+NOTE: recipe m4-native-1.4.18-r0: task do_fetch: Started
+NOTE: recipe gnu-config-native-20190501+gitAUTOINC+b98424c249-r0: task do_fetch: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_unpack: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_unpack: Succeeded
+NOTE: recipe quilt-native-0.66-r0: task do_fetch: Succeeded
+NOTE: Running task 7 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/quilt/quilt-native_0.66.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 8 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/quilt/quilt-native_0.66.bb:do_unpack)
+NOTE: recipe quilt-native-0.66-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe quilt-native-0.66-r0: task do_unpack: Started
+NOTE: recipe quilt-native-0.66-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe quilt-native-0.66-r0: task do_unpack: Succeeded
+NOTE: Running task 9 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/quilt/quilt-native_0.66.bb:do_patch)
+NOTE: recipe quilt-native-0.66-r0: task do_patch: Started
+NOTE: recipe quilt-native-0.66-r0: task do_patch: Succeeded
+NOTE: Running task 10 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/quilt/quilt-native_0.66.bb:do_populate_lic)
+NOTE: Running task 11 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/quilt/quilt-native_0.66.bb:do_configure)
+NOTE: recipe quilt-native-0.66-r0: task do_populate_lic: Started
+NOTE: recipe quilt-native-0.66-r0: task do_configure: Started
+NOTE: recipe m4-native-1.4.18-r0: task do_fetch: Succeeded
+NOTE: Running task 12 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/m4/m4-native_1.4.18.bb:do_unpack)
+NOTE: recipe quilt-native-0.66-r0: task do_populate_lic: Succeeded
+NOTE: recipe m4-native-1.4.18-r0: task do_unpack: Started
+NOTE: recipe m4-native-1.4.18-r0: task do_unpack: Succeeded
+NOTE: recipe quilt-native-0.66-r0: task do_configure: Succeeded
+NOTE: Running task 13 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/quilt/quilt-native_0.66.bb:do_compile)
+NOTE: recipe quilt-native-0.66-r0: task do_compile: Started
+NOTE: recipe quilt-native-0.66-r0: task do_compile: Succeeded
+NOTE: Running task 14 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/quilt/quilt-native_0.66.bb:do_install)
+NOTE: recipe quilt-native-0.66-r0: task do_install: Started
+NOTE: recipe quilt-native-0.66-r0: task do_install: Succeeded
+NOTE: Running task 15 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/quilt/quilt-native_0.66.bb:do_populate_sysroot)
+NOTE: recipe quilt-native-0.66-r0: task do_populate_sysroot: Started
+NOTE: recipe gnu-config-native-20190501+gitAUTOINC+b98424c249-r0: task do_fetch: Succeeded
+NOTE: Running task 16 of 42 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 17 of 42 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_unpack)
+NOTE: recipe gnu-config-native-20190501+gitAUTOINC+b98424c249-r0: task do_unpack: Started
+NOTE: recipe gnu-config-native-20190501+gitAUTOINC+b98424c249-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gnu-config-native-20190501+gitAUTOINC+b98424c249-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe quilt-native-0.66-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 18 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/quilt/quilt-native_0.66.bb:do_rm_work)
+NOTE: Running task 19 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_patch)
+NOTE: Running task 20 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/m4/m4-native_1.4.18.bb:do_patch)
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_patch: Started
+NOTE: recipe gnu-config-native-20190501+gitAUTOINC+b98424c249-r0: task do_unpack: Succeeded
+NOTE: recipe quilt-native-0.66-r0: task do_rm_work: Started
+NOTE: Running task 21 of 42 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_patch)
+NOTE: recipe m4-native-1.4.18-r0: task do_patch: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_patch: Succeeded
+NOTE: Running task 22 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_populate_lic)
+NOTE: Running task 23 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_configure)
+NOTE: recipe quilt-native-0.66-r0: task do_rm_work: Succeeded
+NOTE: recipe gnu-config-native-20190501+gitAUTOINC+b98424c249-r0: task do_patch: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_populate_lic: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_configure: Started
+NOTE: recipe gnu-config-native-20190501+gitAUTOINC+b98424c249-r0: task do_patch: Succeeded
+NOTE: Running task 24 of 42 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_populate_lic)
+NOTE: Running task 25 of 42 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_configure)
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_configure: Succeeded
+NOTE: Running task 26 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_compile)
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_compile: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_populate_lic: Succeeded
+NOTE: recipe m4-native-1.4.18-r0: task do_patch: Succeeded
+NOTE: Running task 27 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/m4/m4-native_1.4.18.bb:do_populate_lic)
+NOTE: recipe gnu-config-native-20190501+gitAUTOINC+b98424c249-r0: task do_configure: Started
+NOTE: recipe gnu-config-native-20190501+gitAUTOINC+b98424c249-r0: task do_populate_lic: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_compile: Succeeded
+NOTE: Running task 28 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_install)
+NOTE: recipe gnu-config-native-20190501+gitAUTOINC+b98424c249-r0: task do_configure: Succeeded
+NOTE: Running noexec task 29 of 42 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_compile)
+NOTE: Running task 30 of 42 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_install)
+NOTE: recipe m4-native-1.4.18-r0: task do_populate_lic: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_install: Started
+NOTE: recipe gnu-config-native-20190501+gitAUTOINC+b98424c249-r0: task do_populate_lic: Succeeded
+NOTE: recipe gnu-config-native-20190501+gitAUTOINC+b98424c249-r0: task do_install: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_install: Succeeded
+NOTE: recipe m4-native-1.4.18-r0: task do_populate_lic: Succeeded
+NOTE: Running task 31 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_populate_sysroot)
+NOTE: recipe gnu-config-native-20190501+gitAUTOINC+b98424c249-r0: task do_install: Succeeded
+NOTE: Running task 32 of 42 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_populate_sysroot)
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_populate_sysroot: Started
+NOTE: recipe gnu-config-native-20190501+gitAUTOINC+b98424c249-r0: task do_populate_sysroot: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 33 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_rm_work)
+NOTE: recipe gnu-config-native-20190501+gitAUTOINC+b98424c249-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 34 of 42 (virtual:native:/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_rm_work)
+NOTE: Running task 35 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/m4/m4-native_1.4.18.bb:do_prepare_recipe_sysroot)
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_rm_work: Started
+NOTE: recipe m4-native-1.4.18-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe m4-native-1.4.18-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 36 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/m4/m4-native_1.4.18.bb:do_configure)
+NOTE: recipe gnu-config-native-20190501+gitAUTOINC+b98424c249-r0: task do_rm_work: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_rm_work: Succeeded
+NOTE: recipe m4-native-1.4.18-r0: task do_configure: Started
+NOTE: recipe gnu-config-native-20190501+gitAUTOINC+b98424c249-r0: task do_rm_work: Succeeded
+NOTE: Running noexec task 37 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/m4/m4-native_1.4.18.bb:do_rm_work_all)
+NOTE: recipe m4-native-1.4.18-r0: task do_configure: Succeeded
+NOTE: Running task 38 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/m4/m4-native_1.4.18.bb:do_compile)
+NOTE: recipe m4-native-1.4.18-r0: task do_compile: Started
+NOTE: recipe m4-native-1.4.18-r0: task do_compile: Succeeded
+NOTE: Running task 39 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/m4/m4-native_1.4.18.bb:do_install)
+NOTE: recipe m4-native-1.4.18-r0: task do_install: Started
+NOTE: recipe m4-native-1.4.18-r0: task do_install: Succeeded
+NOTE: Running task 40 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/m4/m4-native_1.4.18.bb:do_populate_sysroot)
+NOTE: recipe m4-native-1.4.18-r0: task do_populate_sysroot: Started
+NOTE: recipe m4-native-1.4.18-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 41 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/m4/m4-native_1.4.18.bb:do_rm_work)
+NOTE: recipe m4-native-1.4.18-r0: task do_rm_work: Started
+NOTE: recipe m4-native-1.4.18-r0: task do_rm_work: Succeeded
+NOTE: Running noexec task 42 of 42 (/home/philippe/projects/test-oe-build-time/poky/meta/recipes-devtools/m4/m4-native_1.4.18.bb:do_build)
+NOTE: Tasks Summary: Attempted 42 tasks of which 0 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.
+1.00user 0.11system 1:11.20elapsed 1%CPU (0avgtext+0avgdata 31452maxresident)k
+0inputs+2696outputs (0major+19434minor)pagefaults 0swaps

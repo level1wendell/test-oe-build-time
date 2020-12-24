@@ -1,0 +1,47 @@
+Cloning into 'poky'...
+Switched to a new branch 'zeus'
+Cloning into 'meta-qt5'...
+Switched to a new branch 'zeus'
+Cloning into 'meta-browser'...
+Switched to a new branch 'zeus'
+Cloning into 'meta-openembedded'...
+Switched to a new branch 'zeus'
+Cloning into 'meta-clang'...
+Switched to a new branch 'zeus'
+Cloning into 'meta-rust'...
+Switched to a new branch 'zeus'
+You had no conf/local.conf file. This configuration file has therefore been
+created for you with some default values. You may wish to edit it to, for
+example, select a different MACHINE (target hardware). See conf/local.conf
+for more information as common configuration options are commented.
+
+You had no conf/bblayers.conf file. This configuration file has therefore been
+created for you with some default values. To add additional metadata layers
+into your configuration please add entries to conf/bblayers.conf.
+
+The Yocto Project has extensive documentation about OE including a reference
+manual which can be found at:
+    http://yoctoproject.org/documentation
+
+For more information about OpenEmbedded see their website:
+    http://www.openembedded.org/
+
+
+### Shell environment set up for builds. ###
+
+You can now run 'bitbake <target>'
+
+Common targets are:
+    core-image-minimal
+    core-image-sato
+    meta-toolchain
+    meta-ide-support
+
+You can also run generated qemu images with a command like 'runqemu qemux86'
+
+Other commonly useful commands are:
+ - 'devtool' and 'recipetool' handle common recipe tasks
+ - 'bitbake-layers' handles common layer tasks
+ - 'oe-pkgdata-util' handles common target package tasks
+45.18user 13.90system 29:07.81elapsed 3%CPU (0avgtext+0avgdata 144772maxresident)k
+0inputs+751792outputs (0major+105990minor)pagefaults 0swaps
