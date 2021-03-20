@@ -1,0 +1,54 @@
+SYS:	HP ProLiant DL585 G7
+CPU:	64 "cores" - quad opteron 6380
+RAM:	128GB (16x8G DDR3 ECC 1333MHz quad channel)
+DISK:	Corsair 480GB Force Series MP510 M.2 NVMe SSD, 5GB SWAP (on add-in card limited to PCIE gen2 by MB)
+OS:	Devuan Beowulf
+
+==> 1-init.log <==
+ - 'devtool' and 'recipetool' handle common recipe tasks
+ - 'bitbake-layers' handles common layer tasks
+ - 'oe-pkgdata-util' handles common target package tasks
+45.18user 13.90system 29:07.81elapsed 3%CPU (0avgtext+0avgdata 144772maxresident)k
+0inputs+751792outputs (0major+105990minor)pagefaults 0swaps
+
+==> 2-build-test.log <==
+NOTE: Tasks Summary: Attempted 42 tasks of which 0 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.
+1.00user 0.11system 1:11.20elapsed 1%CPU (0avgtext+0avgdata 31452maxresident)k
+0inputs+2696outputs (0major+19434minor)pagefaults 0swaps
+
+==> 3-fetch.log <==
+NOTE: Tasks Summary: Attempted 530 tasks of which 0 didn't need to be rerun and all succeeded.
+
+Summary: There were 4 WARNING messages shown.
+21.54user 2.82system 1:54:12elapsed 0%CPU (0avgtext+0avgdata 29152maxresident)k
+0inputs+760outputs (0major+31136minor)pagefaults 0swaps
+
+==> 4-build-all-cores.log <==
+NOTE: Tasks Summary: Attempted 7999 tasks of which 1 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.
+63.94user 7.23system 3:16:08elapsed 0%CPU (0avgtext+0avgdata 28756maxresident)k
+4112inputs+5520outputs (360major+62751minor)pagefaults 0swaps
+
+==> 5-build-8-bb-threads.log <==
+NOTE: Tasks Summary: Attempted 7999 tasks of which 1 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.
+72.51user 8.41system 3:36:55elapsed 0%CPU (0avgtext+0avgdata 28808maxresident)k
+13400inputs+6096outputs (154major+70240minor)pagefaults 0swaps
+
+==> 6-build-16-bb-threads.log <==
+NOTE: Tasks Summary: Attempted 7999 tasks of which 1 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.
+68.76user 8.24system 3:13:54elapsed 0%CPU (0avgtext+0avgdata 28580maxresident)k
+6936inputs+5584outputs (72major+66408minor)pagefaults 0swaps
+
+==> 7-build-2-bb-threads.log <==
+NOTE: Tasks Summary: Attempted 7999 tasks of which 1 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.
+73.21user 8.92system 6:24:44elapsed 0%CPU (0avgtext+0avgdata 28972maxresident)k
+9872inputs+10320outputs (2major+70035minor)pagefaults 0swaps
